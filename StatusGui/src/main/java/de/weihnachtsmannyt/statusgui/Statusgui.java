@@ -1,7 +1,8 @@
 package de.weihnachtsmannyt.statusgui;
 
 import de.weihnachtsmannyt.status.Status;
-import de.weihnachtsmannyt.statusgui.Commands.guicommand;
+import de.weihnachtsmannyt.statusgui.Commands.GuiCommand;
+import de.weihnachtsmannyt.statusgui.Managers.HeadManager;
 import de.weihnachtsmannyt.statusgui.Managers.InvListener;
 import de.weihnachtsmannyt.statusgui.Managers.MethodsManager;
 import org.bukkit.Bukkit;
@@ -13,6 +14,7 @@ public final class Statusgui extends JavaPlugin {
     private static Status statusApi;
 
     private MethodsManager methodsManager;
+    private HeadManager headManager;
     public static Statusgui getInstance() {
         return instance;
     }
@@ -27,11 +29,12 @@ public final class Statusgui extends JavaPlugin {
         //APi Stuff
         instance = this;
         this.methodsManager = new MethodsManager();
+        this.headManager = new HeadManager();
 
         statusApi = Status.getInstance();
 
         Bukkit.getPluginManager().registerEvents(new InvListener(), this);
-        getCommand("statusgui").setExecutor(new guicommand());
+        getCommand("statusgui").setExecutor(new GuiCommand());
     }
 
     @Override
@@ -41,6 +44,10 @@ public final class Statusgui extends JavaPlugin {
 
     public MethodsManager getMethodsManager() {
         return methodsManager;
+    }
+
+    public HeadManager getHeadManager() {
+        return headManager;
     }
 
     public Status getStatusApi() {

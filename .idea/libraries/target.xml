@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="target">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../tmp/Status/target/Status-1.2.7-RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tmp/Status/target/original-Status-1.2.7-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

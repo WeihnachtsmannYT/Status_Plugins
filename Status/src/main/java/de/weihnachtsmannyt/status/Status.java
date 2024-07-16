@@ -6,6 +6,7 @@ import de.weihnachtsmannyt.status.Manager.ConfigVarManager;
 import de.weihnachtsmannyt.status.Manager.EventManager;
 import de.weihnachtsmannyt.status.Manager.FileManager;
 import de.weihnachtsmannyt.status.Manager.PrefixManager;
+import de.weihnachtsmannyt.status.PlanHookDir.PlanHook;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -27,15 +28,15 @@ public final class Status extends JavaPlugin {
     public static void startSaveAndRegisterPlayer() {
         YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
         for (Player all : Bukkit.getOnlinePlayers()) {
-            all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard());
+            all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(all));
         }
         for (Player all : Bukkit.getOnlinePlayers()) {
             if (statusData.getString(all.getUniqueId().toString()) == null) {
                 Status.getInstance().getFileManager().savePlayerInStatus(all, "Default", "§f");
-                Status.getInstance().getPrefixManager().getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeam()).addEntry(all.getDisplayName());
+                Status.getInstance().getPrefixManager().getScoreboard(all).getTeam(Status.getInstance().getPrefixManager().getTeam()).addEntry(all.getDisplayName());
             }
             if (statusData.getString(all.getUniqueId() + ".status").equals("Default")) {
-                Status.getInstance().getPrefixManager().getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeam()).addEntry(all.getDisplayName());
+                Status.getInstance().getPrefixManager().getScoreboard(all).getTeam(Status.getInstance().getPrefixManager().getTeam()).addEntry(all.getDisplayName());
             } else {
                 Status.getInstance().getPrefixManager().updatePrefix(all);
             }
@@ -54,6 +55,11 @@ public final class Status extends JavaPlugin {
         this.fileManager = new FileManager();
         this.configVarManager = new ConfigVarManager();
 
+        //try {
+        //    new PlanHook(database).hookIntoPlan();
+        //} catch (NoClassDefFoundError planIsNotInstalled) {
+        //    // Plan is not installed
+        //}
 
         configVarManager.updateVar();
         Status.getInstance().getPrefixManager().resetAfkAll();

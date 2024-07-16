@@ -4,6 +4,7 @@ import de.weihnachtsmannyt.status.Status;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.Statistic;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -40,6 +41,7 @@ public class Command implements CommandExecutor {
                         if (args[1].toLowerCase().contains("debug")) {
                             Status.getInstance().getFileManager().saveStatusFile();
                             p.sendMessage("-player:" + statusData.get(p.getUniqueId() + ".player"));
+                            p.sendMessage("-deaths:" + p.getStatistic(Statistic.DEATHS));
                             p.sendMessage("-status:" + statusData.get(p.getUniqueId() + ".status"));
                             p.sendMessage("-color:" + statusData.get(p.getUniqueId() + ".color"));
                             p.sendMessage("-Afk:" + statusData.get(p.getUniqueId() + ".Afk"));
@@ -156,7 +158,7 @@ public class Command implements CommandExecutor {
                                     Status.getInstance().getFileManager().savePlayerInStatus(target, status, color);
                                     Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
                                     for (Player all : Bukkit.getOnlinePlayers()) {
-                                        all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard());
+                                        all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(all));
                                     }
                                     assert target != null;
                                     p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix()
