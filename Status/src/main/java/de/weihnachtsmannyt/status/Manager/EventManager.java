@@ -28,9 +28,7 @@ public class EventManager implements Listener {
 
         if (!FileManager.playerIsRegistered(p)) {
             Status.getInstance().getFileManager().savePlayerInStatus(p, "Default", "§f");
-            Objects.requireNonNull(Status.getInstance().getPrefixManager().getDefaultScoreboard().getTeam(team)).addEntry(p.getDisplayName());
-            Objects.requireNonNull(Status.getInstance().getPrefixManager().getDeathsScoreboard().getTeam(team)).addEntry(p.getDisplayName());
-            Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
+            Objects.requireNonNull(Status.getInstance().getPrefixManager().getScoreboard().getTeam(team)).addEntry(p.getDisplayName());
         }
 
         if (Status.getInstance().getConfigVarManager().getJoin_Leave_Message_on_off()) {

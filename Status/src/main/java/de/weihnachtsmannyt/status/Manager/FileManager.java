@@ -47,7 +47,7 @@ public class FileManager {
             statusData.set(player.getUniqueId() + ".status", status);
             statusData.set(player.getUniqueId() + ".color", color);
         }else{
-            savePlayerInStatusWithPersonalWithAfk(player, status, color, true, true, true, true, false);
+            savePlayerInStatusWithPersonalWithAfk(player,status,color,true,true,false,true,false);
         }
     }
 
@@ -77,6 +77,7 @@ public class FileManager {
         playerSettings.set(".AutoAfk_on_off",AutoAfk_on_off);
 
         Status.getInstance().getFileManager().saveStatusFile();
+
     }
 
     public static Boolean playerIsRegistered(Player player) {

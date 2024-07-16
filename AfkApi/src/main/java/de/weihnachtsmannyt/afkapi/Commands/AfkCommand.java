@@ -23,14 +23,13 @@ public class AfkCommand implements CommandExecutor {
         }
         if (afkManager.toggleAFKStatus(p)) {
             p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7You are now AFK.");
-            AfkManager.setPlayerAfk(p, true, true);
+            AfkManager.setPlayerAfk(p, true);
             afkManager.announceToOthers(p, true);
 
         } else {
             p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7You are no longer AFK.");
-            AfkManager.setPlayerAfk(p, false, true);
+            AfkManager.setPlayerAfk(p, false);
             afkManager.announceToOthers(p, false);
-            Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
         }
         return true;
     }
