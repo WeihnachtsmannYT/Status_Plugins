@@ -2,7 +2,6 @@ de\weihnachtsmannyt\status\Command\TabComplete.class
 de\weihnachtsmannyt\status\Manager\ConfigVarManager.class
 de\weihnachtsmannyt\status\Status.class
 de\weihnachtsmannyt\status\Manager\FileManager.class
-de\weihnachtsmannyt\status\PlanHookDir\PlanHook.class
 de\weihnachtsmannyt\status\Manager\EventManager.class
 de\weihnachtsmannyt\status\Command\Command.class
 de\weihnachtsmannyt\status\Manager\PrefixManager.class

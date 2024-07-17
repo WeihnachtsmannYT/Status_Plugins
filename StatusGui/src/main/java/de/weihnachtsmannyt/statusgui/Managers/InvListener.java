@@ -31,7 +31,6 @@ public class InvListener implements Listener {
 
         switch (Objects.requireNonNull(MethodsManager.getCustomLocalizedName(event.getCurrentItem()))) {
             case "close":
-                p.sendMessage("debug 1");
                 p.closeInventory();
                 event.setCancelled(true);
                 break;

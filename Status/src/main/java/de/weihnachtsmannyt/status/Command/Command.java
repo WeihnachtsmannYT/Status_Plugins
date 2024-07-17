@@ -12,7 +12,8 @@ import org.bukkit.entity.Player;
 
 import java.util.Objects;
 
-import static de.weihnachtsmannyt.status.Manager.FileManager.*;
+import static de.weihnachtsmannyt.status.Manager.FileManager.StringIsBlocked;
+import static de.weihnachtsmannyt.status.Manager.FileManager.playerIsRegistered;
 
 
 public class Command implements CommandExecutor {
@@ -38,17 +39,32 @@ public class Command implements CommandExecutor {
                     Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
                     p.sendMessage("Status has been updated");
                     if (args.length==2) {
-                        if (args[1].toLowerCase().contains("debug")) {
-                            Status.getInstance().getFileManager().saveStatusFile();
-                            p.sendMessage("-player:" + statusData.get(p.getUniqueId() + ".player"));
-                            p.sendMessage("-deaths:" + p.getStatistic(Statistic.DEATHS));
-                            p.sendMessage("-status:" + statusData.get(p.getUniqueId() + ".status"));
-                            p.sendMessage("-color:" + statusData.get(p.getUniqueId() + ".color"));
-                            p.sendMessage("-Afk:" + statusData.get(p.getUniqueId() + ".Afk"));
-                            p.sendMessage("-Status_Prefix_on_off:" + statusData.get(p.getUniqueId() +".p-settings"+ ".Status_Prefix_on_off"));
-                            p.sendMessage("-Join_Leave_Message_on_off:" + statusData.get(p.getUniqueId() +".p-settings"+ ".Join_Leave_Message_on_off"));
-                            p.sendMessage("-DeathCounter_on_off:" + statusData.get(p.getUniqueId() +".p-settings"+ ".DeathCounter_on_off"));
-                            p.sendMessage("-AutoAfk_on_off:" + statusData.get(p.getUniqueId() +".p-settings"+ ".AutoAfk_on_off"));
+                        switch (args[1].toLowerCase()) {
+                            case "debug" -> {
+                                Status.getInstance().getFileManager().saveStatusFile();
+                                p.sendMessage("-player:" + statusData.get(p.getUniqueId() + ".player"));
+                                p.sendMessage("-deaths:" + p.getStatistic(Statistic.DEATHS));
+                                p.sendMessage("-status:" + statusData.get(p.getUniqueId() + ".status"));
+                                p.sendMessage("-color:" + statusData.get(p.getUniqueId() + ".color"));
+                                p.sendMessage("-Afk:" + statusData.get(p.getUniqueId() + ".Afk"));
+                                p.sendMessage("-Status_Prefix_on_off:" + statusData.get(p.getUniqueId() + ".p-settings" + ".Status_Prefix_on_off"));
+                                p.sendMessage("-Join_Leave_Message_on_off:" + statusData.get(p.getUniqueId() + ".p-settings" + ".Join_Leave_Message_on_off"));
+                                p.sendMessage("-DeathCounter_on_off:" + statusData.get(p.getUniqueId() + ".p-settings" + ".DeathCounter_on_off"));
+                                p.sendMessage("-AutoAfk_on_off:" + statusData.get(p.getUniqueId() + ".p-settings" + ".AutoAfk_on_off"));
+                            }
+                            case "deaths-debugger" -> {
+                                Status.getInstance().getFileManager().saveStatusFile();
+                                p.sendMessage("-----------------------------------------------------");
+                                for (Player target : Bukkit.getOnlinePlayers()) {
+                                    p.sendMessage("-player:                     " + statusData.get(target.getUniqueId() + ".player"));
+                                    p.sendMessage("-DeathCounter_on_off:        " + statusData.get(target.getUniqueId() + ".p-settings" + ".DeathCounter_on_off"));
+                                    p.sendMessage("-Tablist-Prefix:             " + Objects.requireNonNull(target.getScoreboard().getTeam("001" + target)).getPrefix());
+                                    p.sendMessage("-----------------------------------------------------");
+                                }
+                            }
+                            default -> {
+                                sendFailedCmd(p);
+                            }
                         }
                     }
                 }else sendUsage(p);

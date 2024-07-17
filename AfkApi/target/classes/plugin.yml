@@ -1,7 +1,7 @@
 name: AfkApi
 version: '1.0-RELEASE'
 main: de.weihnachtsmannyt.afkapi.AfkApi
-api-version: 1.20
+api-version: 1.21
 authors: [ WeihnachtsmannYT ]
 description: Detects Afk Players
 depend: [ Status ]

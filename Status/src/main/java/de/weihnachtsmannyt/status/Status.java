@@ -6,7 +6,6 @@ import de.weihnachtsmannyt.status.Manager.ConfigVarManager;
 import de.weihnachtsmannyt.status.Manager.EventManager;
 import de.weihnachtsmannyt.status.Manager.FileManager;
 import de.weihnachtsmannyt.status.Manager.PrefixManager;
-import de.weihnachtsmannyt.status.PlanHookDir.PlanHook;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -54,12 +53,6 @@ public final class Status extends JavaPlugin {
         this.prefixManager = new PrefixManager();
         this.fileManager = new FileManager();
         this.configVarManager = new ConfigVarManager();
-
-        //try {
-        //    new PlanHook(database).hookIntoPlan();
-        //} catch (NoClassDefFoundError planIsNotInstalled) {
-        //    // Plan is not installed
-        //}
 
         configVarManager.updateVar();
         Status.getInstance().getPrefixManager().resetAfkAll();

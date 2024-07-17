@@ -22,8 +22,6 @@ public class GuiCommand implements CommandExecutor {
             return false;
         }
 
-        if (!player.hasPermission("statusgui.open")) return true;
-
         Inventory inventory = Bukkit.createInventory(null, 3 * 9, "Status Gui");
 
         if (args.length > 1) {
