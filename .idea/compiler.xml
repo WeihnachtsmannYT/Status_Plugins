@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="AfkApi" target="16" />
+      <module name="Status" target="22" />
+      <module name="StatusGui" target="22" />
+      <module name="StatusPlugins" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

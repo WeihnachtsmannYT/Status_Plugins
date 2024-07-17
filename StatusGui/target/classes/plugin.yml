@@ -1,0 +1,10 @@
+name: StatusGui
+version: '1.0-RELEASE'
+main: de.weihnachtsmannyt.statusgui.Statusgui
+api-version: 1.20
+authors: [ WeihnachtsmannYT ]
+description: Gui for Statuts pl
+depend: [ Status ]
+commands:
+  statusgui:
+    description: Opens Gui for Status

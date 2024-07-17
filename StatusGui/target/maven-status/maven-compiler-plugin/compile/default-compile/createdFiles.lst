@@ -1,0 +1,5 @@
+de\weihnachtsmannyt\statusgui\Statusgui.class
+de\weihnachtsmannyt\statusgui\Managers\HeadManager.class
+de\weihnachtsmannyt\statusgui\Managers\MethodsManager.class
+de\weihnachtsmannyt\statusgui\Managers\InvListener.class
+de\weihnachtsmannyt\statusgui\Commands\GuiCommand.class

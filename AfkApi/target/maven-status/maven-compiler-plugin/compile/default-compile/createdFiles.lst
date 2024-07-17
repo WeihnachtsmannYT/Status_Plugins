@@ -1,0 +1,6 @@
+de\weihnachtsmannyt\afkapi\Managers\AfkManager.class
+de\weihnachtsmannyt\afkapi\AfkApi.class
+de\weihnachtsmannyt\afkapi\Commands\AfkCommand.class
+de\weihnachtsmannyt\afkapi\Tasks\MovementChecker.class
+de\weihnachtsmannyt\afkapi\Commands\IsAfkCommand.class
+de\weihnachtsmannyt\afkapi\listeners\AfkListener.class

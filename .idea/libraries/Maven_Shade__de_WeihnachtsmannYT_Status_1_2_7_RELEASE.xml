@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Maven Shade: de.WeihnachtsmannYT:Status:1.2.7-RELEASE" external-system-id="Maven">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

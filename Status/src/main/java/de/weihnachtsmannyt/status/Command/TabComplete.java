@@ -1,6 +1,7 @@
 package de.weihnachtsmannyt.status.Command;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Color;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
@@ -13,10 +14,10 @@ public class TabComplete implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 
-        /*TODO**
-          Argumente
-         /status 1 2 3 4
-         */
+        /*
+            Argumente
+            /status 1 2 3 4
+        */
 
         ArrayList<String> list = new ArrayList<>();
         if (args.length == 0) return list;
@@ -27,6 +28,9 @@ public class TabComplete implements TabCompleter {
             list.add("get");
         }
         if (args.length == 2) {
+
+            //TODO: Fix this ->
+
             String operator = args[1].toLowerCase();
             switch (operator) {
                 case "reset":
@@ -42,7 +46,7 @@ public class TabComplete implements TabCompleter {
                     }
                     break;
                 default:
-                    return list;
+                    break;
             }
         }
         if (args.length == 3) {
@@ -85,6 +89,6 @@ public class TabComplete implements TabCompleter {
                 completerList.add(s);
             }
         }
-        return list;
+        return completerList;
     }
 }

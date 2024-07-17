@@ -9,18 +9,24 @@ import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 
 import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class PrefixManager {
 
     static String team = "001Spieler";
-    private static Scoreboard scoreboard;
+    private static Scoreboard defaultScoreboard;
+    private static Scoreboard deathsScoreboard;
 
     public void setScoreboard() {
-        scoreboard = Objects.requireNonNull(Bukkit.getScoreboardManager()).getNewScoreboard();
+        defaultScoreboard = Objects.requireNonNull(Bukkit.getScoreboardManager()).getNewScoreboard();
+        deathsScoreboard = Objects.requireNonNull(Bukkit.getScoreboardManager()).getNewScoreboard();
+        defaultScoreboard.registerNewTeam(team);
+        deathsScoreboard.registerNewTeam(team);
+        Objects.requireNonNull(defaultScoreboard.getTeam(team)).setPrefix("§f[Spieler] §f");
+        Objects.requireNonNull(deathsScoreboard.getTeam(team)).setPrefix("§f[Spieler] §f");
 
-        scoreboard.registerNewTeam(team);
-
-        Objects.requireNonNull(scoreboard.getTeam(team)).setPrefix("§f[Spieler] §f");
+        updatePrefixAllPlayers();
     }
 
     public void resetAfkAll(){
@@ -38,46 +44,41 @@ public class PrefixManager {
 
         if (player.isOnline()) {
             try {
-                scoreboard.registerNewTeam(playerTeam);
+                defaultScoreboard.registerNewTeam(playerTeam);
+                deathsScoreboard.registerNewTeam(playerTeam);
             } catch (Exception e){
                 System.out.println(Status.getInstance().getConfigVarManager().getStatus_Prefix()+"Register new Team error!");
             }
 
-            if (Status.getInstance().getConfigVarManager().getDeathCounter_on_off() && statusData.getBoolean(player.getUniqueId()+".p-settings"+".DeathCounter_on_off")) {
-                if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
-                    if (player.getStatistic(Statistic.DEATHS) > 0 && statusData.getBoolean(player.getUniqueId()+".p-settings"+".DeathCounter_on_off")) {
-                        Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setPrefix("§f[" + player.getStatistic(Statistic.DEATHS) + "§f]" + " §f[" + "Spieler" + "§f] §f");
-                    } else {
-                        Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setPrefix("§f[" + "Spieler" + "§f] §f");
-                    }
-                } else {
-                    if (player.getStatistic(Statistic.DEATHS) > 0 && statusData.getBoolean(player.getUniqueId()+".p-settings"+".DeathCounter_on_off")) {
-                        Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setPrefix("§f[" + player.getStatistic(Statistic.DEATHS) + "§f]"
-                                + " §f[" + statusData.getString(player.getUniqueId() + ".color")
-                                + ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(statusData.getString(player.getUniqueId() + ".status"))) + "§f] §f");
-                    } else {
-                        Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setPrefix("§f[" + statusData.getString(player.getUniqueId() + ".color")
-                                + ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(statusData.getString(player.getUniqueId() + ".status"))) + "§f] §f");
-                    }
-                }
+            if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix("§f[" + "Spieler" + "§f] §f");
+
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix("§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                        + "§f[" + "Spieler" + "§f] §f");
             } else {
-                if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
-                    Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setPrefix("§f["+ "Spieler" +"§f] §f");
-                } else {
-                    Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setPrefix("§f["+ statusData.getString(player.getUniqueId() + ".color")
-                            + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
-                }
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix("§f[" + statusData.getString(player.getUniqueId() + ".color")
+                        + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
+
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix("§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                        + "§f[" + statusData.getString(player.getUniqueId() + ".color")
+                        + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
+
             }
 
             if (statusData.getBoolean(player.getUniqueId() + ".Afk")){
-                Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setSuffix("§r §c["+ "AFK" +"]§r");
-            }else{
-                Objects.requireNonNull(scoreboard.getTeam(playerTeam)).setSuffix("");
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setSuffix("§r §c[" + "AFK" + "]§r");
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setSuffix("§r §c[" + "AFK" + "]§r");
+            } else {
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setSuffix("");
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setSuffix("");
             }
 
-            Objects.requireNonNull(scoreboard.getTeam(playerTeam)).addEntry(player.getDisplayName());
+            Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).addEntry(player.getDisplayName());
+            Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).addEntry(player.getDisplayName());
+
+
+
             Status.getInstance().getFileManager().saveStatusFile();
-            player.setScoreboard(scoreboard);
         }
     }
 
@@ -92,7 +93,8 @@ public class PrefixManager {
 
         for (Player target : Bukkit.getOnlinePlayers()) {
             if (Objects.equals(statusData.getString(target.getUniqueId() + ".status"), "Default")) {
-                Objects.requireNonNull(Status.getInstance().getPrefixManager().getScoreboard().getTeam(team)).addEntry(target.getDisplayName());
+                Objects.requireNonNull(Status.getInstance().getPrefixManager().getDefaultScoreboard().getTeam(team)).addEntry(target.getDisplayName());
+                Objects.requireNonNull(Status.getInstance().getPrefixManager().getDeathsScoreboard().getTeam(team)).addEntry(target.getDisplayName());
             } else {
                 Status.getInstance().getFileManager().saveStatusFile();
                 Status.getInstance().getPrefixManager().updatePrefix(target);
@@ -100,7 +102,7 @@ public class PrefixManager {
         }
 
         for (Player all : Bukkit.getOnlinePlayers()) {
-            all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard());
+            all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(all));
         }
     }
 
@@ -186,8 +188,19 @@ public class PrefixManager {
         };
     }
 
-    public Scoreboard getScoreboard() {
-        return scoreboard;
+    public Scoreboard getScoreboard(Player player) {
+        YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
+
+        return Status.getInstance().getConfigVarManager().getDeathCounter_on_off() && statusData.getBoolean(player.getUniqueId() + ".p-settings" + ".DeathCounter_on_off")
+                ? deathsScoreboard : defaultScoreboard;
+    }
+
+    public Scoreboard getDefaultScoreboard() {
+        return defaultScoreboard;
+    }
+
+    public Scoreboard getDeathsScoreboard() {
+        return deathsScoreboard;
     }
 
     public String getTeam() {
