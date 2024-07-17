@@ -1,5 +1,5 @@
 name: StatusGui
-version: '1.0-RELEASE'
+version: '${project.version}'
 main: de.weihnachtsmannyt.statusgui.Statusgui
 api-version: 1.20
 authors: [ WeihnachtsmannYT ]
