@@ -9,8 +9,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 
 import java.util.Objects;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class PrefixManager {
 
@@ -23,10 +21,8 @@ public class PrefixManager {
         deathsScoreboard = Objects.requireNonNull(Bukkit.getScoreboardManager()).getNewScoreboard();
         defaultScoreboard.registerNewTeam(team);
         deathsScoreboard.registerNewTeam(team);
-        Objects.requireNonNull(defaultScoreboard.getTeam(team)).setPrefix("§f[Spieler] §f");
-        Objects.requireNonNull(deathsScoreboard.getTeam(team)).setPrefix("§f[Spieler] §f");
-
-        updatePrefixAllPlayers();
+        Objects.requireNonNull(defaultScoreboard.getTeam(team)).setPrefix("default_prefix");
+        Objects.requireNonNull(deathsScoreboard.getTeam(team)).setPrefix("deaths_prefix");
     }
 
     public void resetAfkAll(){
@@ -87,22 +83,12 @@ public class PrefixManager {
     }
 
     public void updatePrefixAllPlayers() {
-        YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
-
         Status.getInstance().getPrefixManager().setScoreboard();
 
         for (Player target : Bukkit.getOnlinePlayers()) {
-            if (Objects.equals(statusData.getString(target.getUniqueId() + ".status"), "Default")) {
-                Objects.requireNonNull(Status.getInstance().getPrefixManager().getDefaultScoreboard().getTeam(team)).addEntry(target.getDisplayName());
-                Objects.requireNonNull(Status.getInstance().getPrefixManager().getDeathsScoreboard().getTeam(team)).addEntry(target.getDisplayName());
-            } else {
                 Status.getInstance().getFileManager().saveStatusFile();
                 Status.getInstance().getPrefixManager().updatePrefix(target);
-            }
-        }
-
-        for (Player all : Bukkit.getOnlinePlayers()) {
-            all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(all));
+            target.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(target));
         }
     }
 

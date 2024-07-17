@@ -1,6 +1,5 @@
 package de.weihnachtsmannyt.statusgui.Managers;
 
-import com.mojang.authlib.GameProfile;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
@@ -11,7 +10,6 @@ import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.profile.PlayerProfile;
 import org.bukkit.profile.PlayerTextures;
 
-import java.lang.reflect.Field;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Base64;
@@ -113,6 +111,8 @@ public class HeadManager {
     /**
      * Gets the base64 skin of the given SkullMeta
      */
+
+    /**
     public String getBase64Texture(final SkullMeta skullMeta) {
         try {
             final Field profileField = skullMeta.getClass().getDeclaredField("profile");
@@ -123,5 +123,5 @@ public class HeadManager {
             return null;
         }
     }
-
+     **/
 }

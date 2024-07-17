@@ -5,46 +5,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1ff52-4642-4a6e-8e69-cac92a3278f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AfkApi/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AfkApi/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AfkApi/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Status/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Status/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/PlanHookDir/PlanHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Status/src/main/resources/blockedWords-template.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Status/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusGui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusGui/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/HeadManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusGui/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StatusPlugins.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven_Shade__de_WeihnachtsmannYT_Status_1_2_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_oshi_oshi_core_6_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_oshi_oshi_core_6_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_plan_player_analytics_Plan_5_6_2883.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_dagger_dagger_2_51_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_32_1_2_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_21_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_25_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_authlib_5_0_51.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_authlib_6_0_54.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_brigadier_1_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_datafixerupper_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_datafixerupper_7_0_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_logging_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_16_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_15_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_aarch_64_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_97_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__it_unimi_dsi_fastutil_8_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_5_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_5_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_20_R0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_wesjd_anvilgui_1_7_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_iostreams_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_iostreams_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j2_impl_2_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j2_impl_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_builder_support_3_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_resolver_provider_3_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_api_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_connector_basic_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_impl_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_named_locks_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_spi_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_http_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_util_1_9_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_33_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_inject_0_9_0_M2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joml_joml_1_10_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_20_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_20_6_R0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_20_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_20_6_R0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_42_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_45_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/AfkApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/AfkApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Managers/AfkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Managers/AfkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AfkApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AfkApi/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Managers/AfkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Managers/AfkManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/Status.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/Status.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/TabComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/TabComplete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/PlanHookDir/PlanHook.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Command/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/PlanHookDir/PlanHook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/guicommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/HeadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/HeadManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/MethodsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/MethodsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Statusgui.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Statusgui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/statusgui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/statusgui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/HeadManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/HeadManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/MethodsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/MethodsManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" afterDir="false" />
@@ -68,6 +160,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -106,8 +199,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Development/StatusPlugins&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
 }</component>
   <component name="RunManager">
@@ -209,12 +302,30 @@
       <option name="project" value="LOCAL" />
       <updated>1721151230426</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second Update V 1.2-RELEASE">
+      <option name="closed" value="true" />
+      <created>1721227799457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721227799457</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
     <option featureType="dependencySupport" implementationName="java:org.spigotmc:spigot-api" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -243,7 +354,8 @@
     <MESSAGE value="First Update V 1.0-RELEASE" />
     <MESSAGE value="First Update V 1.1-RELEASE" />
     <MESSAGE value="Second Update V 1.1-RELEASE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Update V 1.1-RELEASE" />
+    <MESSAGE value="Second Update V 1.2-RELEASE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Update V 1.2-RELEASE" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

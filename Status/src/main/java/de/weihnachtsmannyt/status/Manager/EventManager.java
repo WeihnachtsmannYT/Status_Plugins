@@ -5,8 +5,10 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -15,7 +17,7 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 
 import java.util.Objects;
 
-import static de.weihnachtsmannyt.status.Manager.PrefixManager.*;
+import static de.weihnachtsmannyt.status.Manager.PrefixManager.team;
 
 public class EventManager implements Listener {
 
@@ -108,20 +110,23 @@ public class EventManager implements Listener {
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
-        YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
+        updateAfterDeath(event);
+    }
 
-        Player p = event.getEntity().getPlayer();
-        assert p != null;
-        statusData.set(p.getUniqueId()+".Afk",false);
-        Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
+    @EventHandler
+    public void entityDeath(EntityDeathEvent event) {
+        if (event.getEntity() != null && event.getEntity() instanceof Player) {
+            updateAfterDeath(event);
+        }
     }
 
     @EventHandler
     public void onPlayerRespawn(PlayerRespawnEvent event){
-        YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
+        updateAfterDeath(event);
+    }
 
-        Player p = event.getPlayer();
-        statusData.set(p.getUniqueId()+".Afk",false);
+    private void updateAfterDeath(Event event) {
+        //TODO wrong update after death
         Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
     }
 }
