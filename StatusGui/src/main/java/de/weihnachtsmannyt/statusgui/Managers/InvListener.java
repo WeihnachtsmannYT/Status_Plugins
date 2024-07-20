@@ -1,6 +1,8 @@
 package de.weihnachtsmannyt.statusgui.Managers;
 
 import de.weihnachtsmannyt.status.Status;
+import de.weihnachtsmannyt.statusgui.GuiElements.ScrollDownItem;
+import de.weihnachtsmannyt.statusgui.GuiElements.ScrollUpItem;
 import de.weihnachtsmannyt.statusgui.Statusgui;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -12,8 +14,18 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
+import org.jetbrains.annotations.NotNull;
+import xyz.xenondevs.invui.gui.Gui;
+import xyz.xenondevs.invui.gui.ScrollGui;
+import xyz.xenondevs.invui.gui.structure.Markers;
+import xyz.xenondevs.invui.item.Item;
+import xyz.xenondevs.invui.item.builder.ItemBuilder;
+import xyz.xenondevs.invui.item.impl.SimpleItem;
+import xyz.xenondevs.invui.window.AnvilWindow;
+import xyz.xenondevs.invui.window.Window;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class InvListener implements Listener {
@@ -28,6 +40,8 @@ public class InvListener implements Listener {
         Player p = (Player) event.getWhoClicked();
 
         YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
+
+        @NotNull ItemBuilder placeholder = new ItemBuilder(Material.BLACK_STAINED_GLASS_PANE).setDisplayName("§r");
 
         switch (Objects.requireNonNull(MethodsManager.getCustomLocalizedName(event.getCurrentItem()))) {
             case "close":
@@ -46,30 +60,30 @@ public class InvListener implements Listener {
             case "set":
                 if (p.hasPermission("status.set")) {
                     //TODO: AnvilGui
-                    event.setCancelled(true);
-                            /*
-                            new AnvilGUI.Builder()
-                                    .onClose(stateSnapshot -> stateSnapshot.getPlayer().sendMessage("You closed the inventory."))
-                                    .onClick((slot, stateSnapshot) -> { // Either use sync or async variant, not both
-                                        if (slot != AnvilGUI.Slot.OUTPUT) {
-                                            return Collections.emptyList();
-                                        }
 
-                                        if (stateSnapshot.getText().equalsIgnoreCase("reset")) {
-                                            stateSnapshot.getPlayer().sendMessage("Du hast dein Status zurückgesetzt!");
-                                            Statusgui.getInstance().getStatusApi().getFileManager().savePlayerInStatus(p, "Default", "§f");
-                                            Statusgui.getInstance().getStatusApi().getPrefixManager().updatePrefixAllPlayers();
-                                        } else {
-                                            stateSnapshot.getPlayer().sendMessage("Du hast dein Status zu " + stateSnapshot.getText() + "!");
-                                            Statusgui.getInstance().getStatusApi().getFileManager().savePlayerInStatus(p, stateSnapshot.getText(), null);
-                                        }
-                                        return Collections.singletonList(AnvilGUI.ResponseAction.close());
-                                    })
-                                    .text("What status do you want?")                              //sets the text the GUI should start with
-                                    .title("Enter your Status.")                                       //set the title of the GUI (only works in 1.14+)
-                                    .plugin(Statusgui.getInstance())                                          //set the plugin instance
-                                    .open(p);                                                   //opens the GUI for the player provided
-                            */
+                    Item back = new SimpleItem(Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück",
+                            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
+                    Item accept = new SimpleItem(Statusgui.getInstance().getMethodsManager().CreateSkull("§aAnnehmen", "accept",
+                            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0="));
+
+                    Gui setInv = Gui.normal().setStructure(
+                                    "x # y"
+                            )
+                            .addIngredient('x', back)
+                            .addIngredient('y', accept)
+                            .build();
+
+                    setInv.setBackground(placeholder);
+
+                    Window window = AnvilWindow.single()
+                            .setViewer(p)
+                            .setTitle("Status Set")
+                            .setGui(setInv)
+                            //.addRenameHandler(s -> p.sendMessage(s))
+                            .build();
+
+                    window.open();
+                    event.setCancelled(true);
                 }
                 event.setCancelled(true);
                 break;
@@ -82,24 +96,42 @@ public class InvListener implements Listener {
             case "setColor":
                 // ItemStack setColor = event.getCurrentItem();
             case "get":
-                Inventory getInv = Bukkit.createInventory(null, 3 * 9, "Status Get");
+                Item border = new SimpleItem(placeholder);
 
-                //Heads
-                for (Player all : Bukkit.getOnlinePlayers()) {
-                    getInv.setItem(Bukkit.getOnlinePlayers().size() - 1, Statusgui.getInstance().getMethodsManager().getHead(all, "Status von " + all.getDisplayName(),
+                // an example list of items to display
+                List<Item> items = new ArrayList<>();
+
+                // Loop through all online players
+                for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+                    Item headItem = new SimpleItem(Statusgui.getInstance().getMethodsManager().getHead(onlinePlayer, "Status von " + onlinePlayer.getDisplayName(),
                             ChatColor.WHITE +
-                                    Objects.requireNonNull(p.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(all))).getPrefix() +
+                                    Objects.requireNonNull(p.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(onlinePlayer))).getPrefix() +
                                     p.getDisplayName(), "getSkull"));
+                    items.add(headItem);
                 }
 
-                getInv.setItem(18, Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
+                Gui getInv = ScrollGui.items()
+                        .setStructure(
+                                "x x x x x x x x u",
+                                "x x x x x x x x #",
+                                "x x x x x x x x #",
+                                "x x x x x x x x #",
+                                "x x x x x x x x d")
+                        .addIngredient('x', Markers.CONTENT_LIST_SLOT_VERTICAL)
+                        .addIngredient('#', border)
+                        .addIngredient('u', new ScrollUpItem())
+                        .addIngredient('d', new ScrollDownItem())
+                        .setContent(items)
+                        .setBackground(placeholder)
+                        .build();
 
-                //Placeholders
-                for (int i = 1; i < 9; i++) {
-                    getInv.setItem(i + 18, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.GRAY_STAINED_GLASS_PANE, 1, 1, null, null, "placeholder"));
-                }
+                Window window = Window.single()
+                        .setViewer(p)
+                        .setTitle("Status Get")
+                        .setGui(getInv)
+                        .build();
+                window.open();
 
-                p.openInventory(getInv);
                 event.setCancelled(true);
                 break;
             case "getSkull":
@@ -114,7 +146,8 @@ public class InvListener implements Listener {
                 //Update Variables
                 Status.getInstance().getConfigVarManager().updateVar();
 
-                pSettingsInv.setItem(18, Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
+                pSettingsInv.setItem(18, Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück",
+                        "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
 
                 //Settings
                 //pSettingsInv.setItem(2, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.PAPER, 1, 1, "Status_Prefix_on_off", null, ""));
@@ -161,7 +194,8 @@ public class InvListener implements Listener {
                 //Update Variables
                 Status.getInstance().getConfigVarManager().updateVar();
 
-                settingsInv.setItem(18, Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
+                settingsInv.setItem(18, Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück",
+                        "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
 
                 //Settings
                 settingsInv.setItem(0, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.PAPER, 1, 1, "Status-Prefix", null, ""));

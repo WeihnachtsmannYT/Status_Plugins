@@ -18,7 +18,7 @@ public class GuiCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, org.bukkit.command.Command cmd, String label, String[] args) {
         if (!(sender instanceof Player player)) {
-            System.out.println("You must be a player!");
+            System.out.println(Statusgui.getInstance().getPrefix() + "You must be a player!");
             return false;
         }
 
@@ -29,7 +29,7 @@ public class GuiCommand implements CommandExecutor {
             return true;
         } else {
             inventory.setItem(22, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.BARRIER, 0, 1, "§7Close", null, "close"));
-            inventory.setItem(11, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.NAME_TAG, 0, 1, "§3Coming soon", null, "set"));
+            inventory.setItem(11, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.NAME_TAG, 0, 1, "§4Set", null, "set"));
             inventory.setItem(15, Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.SPYGLASS, 0, 1, "§4Get", null, "get"));
             inventory.setItem(18, Statusgui.getInstance().getMethodsManager().CreateSkull("§aP-Settings", "pSettings", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0="));
 
@@ -53,8 +53,7 @@ public class GuiCommand implements CommandExecutor {
     }
 
     private void sendUsage(CommandSender sender) {
-        sender.sendMessage("        §c§k!!!!§r§9This Plugin was coded by §cWeihnachtsmannYT§c§k!!!!");
         sender.sendMessage("    §c§k!!!!§r§9This Plugin was coded by §cWeihnachtsmannYT§c§k!!!!");
-        sender.sendMessage("    §7Verwendung§8: §9/statusgui       ");
+        sender.sendMessage("            §7Verwendung§8: §9/statusgui       ");
     }
 }

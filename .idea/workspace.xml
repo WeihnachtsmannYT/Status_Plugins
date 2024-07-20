@@ -5,141 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1ff52-4642-4a6e-8e69-cac92a3278f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StatusPlugins.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/CustomInventoryUI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/font/default.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/custom_invisible_paper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/paper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/player_head.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/player_head_flat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/template_skull.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/template_skull_flat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_container.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_container_27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_container_name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/item/transparent_texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/font/default.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/lang/en_us.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/textures/font/space_nosplit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/textures/font/space_split.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/pack.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/pack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CharRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/EventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/MethodsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/UiCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/resources/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo$SpacingCharacters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/EventManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/MethodsManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/UiCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/GuiElements/ScrollDownItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/GuiElements/ScrollUpItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven_Shade__de_WeihnachtsmannYT_Status_1_2_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_oshi_oshi_core_6_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_oshi_oshi_core_6_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_plan_player_analytics_Plan_5_6_2883.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_dagger_dagger_2_51_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_32_1_2_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_21_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_25_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_authlib_5_0_51.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_authlib_6_0_54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_brigadier_1_2_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_datafixerupper_6_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_datafixerupper_7_0_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_logging_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mojang_logging_1_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_16_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_15_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_aarch_64_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_97_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__it_unimi_dsi_fastutil_8_5_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_2_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_5_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_5_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_20_R0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_wesjd_anvilgui_1_7_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_14_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_22_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_22_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_iostreams_2_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_iostreams_2_22_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j2_impl_2_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j2_impl_2_22_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_builder_support_3_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_resolver_provider_3_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_api_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_connector_basic_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_impl_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_named_locks_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_spi_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_http_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_util_1_9_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_33_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_inject_0_9_0_M2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joml_joml_1_10_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_20_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_1_20_6_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_20_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_20_6_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_42_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_45_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/AfkApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/AfkApi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/Status.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/Status.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/PlanHookDir/PlanHook.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Command/Command.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/PlanHookDir/PlanHook.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/HeadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/HeadManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Statusgui.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Statusgui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/HeadManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/HeadManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/MethodsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/MethodsManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Statusgui.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Statusgui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +94,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="V1.0-RELEASE" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -188,22 +126,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.Status build.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;V1.0-RELEASE&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/StatusPlugins&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.CustomInventoryUI package.executor": "Run",
+    "Maven.Status build.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "V1.4-RELEASE",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Development/StatusPlugins/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
+  },
+  "keyToStringList": {
+    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
+      "22=C:/Program Files/Java/jdk-22"
+    ]
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\models\item" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\textures\custom\ui" />
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.weihnachtsmannyt.custominventoryui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.Status build">
+    <configuration name="CustomInventoryUI package" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="C:\Development\StatusPlugins\CustomInventoryUI" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Status build" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -310,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721227799457</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Third Update V 1.3-RELEASE&#10;update to 1.21">
+      <option name="closed" value="true" />
+      <created>1721248374504</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721248374504</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -355,10 +350,22 @@
     <MESSAGE value="First Update V 1.1-RELEASE" />
     <MESSAGE value="Second Update V 1.1-RELEASE" />
     <MESSAGE value="Second Update V 1.2-RELEASE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Update V 1.2-RELEASE" />
+    <MESSAGE value="Third Update V 1.3-RELEASE&#10;update to 1.21" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Update V 1.3-RELEASE&#10;update to 1.21" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

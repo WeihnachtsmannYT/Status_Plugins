@@ -13,12 +13,14 @@
         <module>Status</module>
         <module>StatusGui</module>
         <module>AfkApi</module>
+        <module>CustomInventoryUI</module>
     </modules>
 
     <properties>
         <Statusversion>1.2.7-RELEASE</Statusversion>
         <StatusGuiversion>1.0-RELEASE</StatusGuiversion>
         <AfkApiversion>1.0-RELEASE</AfkApiversion>
+        <CustomInventoryUIversion>1.0-SNAPSHOT</CustomInventoryUIversion>
 
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>

@@ -5,4 +5,4 @@ api-version: 1.21
 authors: [ WeihnachtsmannYT ]
 description: Status Plugin
 commands:
-    status:
+  status:

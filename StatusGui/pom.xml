@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>StatusGui</artifactId>
-    <version>1.0-RELEASE</version>
+    <version>${StatusGuiversion}</version>
     <packaging>jar</packaging>
 
     <name>StatusGui</name>
@@ -71,6 +71,13 @@
             <id>codemc-snapshots</id>
             <url>https://repo.codemc.io/repository/maven-snapshots/</url>
         </repository>
+
+        <!--Gui repos-->
+        <!--NichtStudioCode InvUI repo-->
+        <repository>
+            <id>xenondevs</id>
+            <url>https://repo.xenondevs.xyz/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -91,5 +98,15 @@
             <version>${Statusversion}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--Gui dependencies-->
+        <!--NichtStudioCode InvUI dependency-->
+        <dependency>
+            <groupId>xyz.xenondevs.invui</groupId>
+            <artifactId>invui</artifactId>
+            <version>1.33</version>
+            <type>pom</type>
+        </dependency>
+
     </dependencies>
 </project>

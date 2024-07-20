@@ -7,8 +7,6 @@ import de.weihnachtsmannyt.status.Manager.EventManager;
 import de.weihnachtsmannyt.status.Manager.FileManager;
 import de.weihnachtsmannyt.status.Manager.PrefixManager;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Status extends JavaPlugin {
@@ -22,24 +20,6 @@ public final class Status extends JavaPlugin {
 
     public static Status getInstance() {
         return instance;
-    }
-
-    public static void startSaveAndRegisterPlayer() {
-        YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
-        for (Player all : Bukkit.getOnlinePlayers()) {
-            all.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(all));
-        }
-        for (Player all : Bukkit.getOnlinePlayers()) {
-            if (statusData.getString(all.getUniqueId().toString()) == null) {
-                Status.getInstance().getFileManager().savePlayerInStatus(all, "Default", "§f");
-                Status.getInstance().getPrefixManager().getScoreboard(all).getTeam(Status.getInstance().getPrefixManager().getTeam()).addEntry(all.getDisplayName());
-            }
-            if (statusData.getString(all.getUniqueId() + ".status").equals("Default")) {
-                Status.getInstance().getPrefixManager().getScoreboard(all).getTeam(Status.getInstance().getPrefixManager().getTeam()).addEntry(all.getDisplayName());
-            } else {
-                Status.getInstance().getPrefixManager().updatePrefix(all);
-            }
-        }
     }
 
     @Override
@@ -62,7 +42,7 @@ public final class Status extends JavaPlugin {
         getCommand("status").setTabCompleter(new TabComplete());
         Status.getInstance().getPrefixManager().setScoreboard();
 
-        startSaveAndRegisterPlayer();
+        Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
     }
 
     @Override

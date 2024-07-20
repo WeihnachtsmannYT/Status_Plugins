@@ -76,12 +76,7 @@ public class EventManager implements Listener {
             e.setCancelled(true);
             p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§9Bitte benutze nicht so viele Großbuchstaben!");
         } else {
-            if (Objects.equals(statusData.getString(p.getUniqueId() + ".status"), "Default")) {
-                e.setFormat(Objects.requireNonNull(p.getScoreboard().getTeam(team)).getPrefix() + p.getDisplayName() + "§f: §r" + message);
-            } else {
-                e.setFormat(Objects.requireNonNull(p.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(p))).getPrefix() + p.getDisplayName() + "§f: §r" + message);
-            }
-
+            e.setFormat(Objects.requireNonNull(p.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(p))).getPrefix() + p.getDisplayName() + "§f: §r" + message);
         }
     }
 

@@ -1,0 +1,9 @@
+name: CustomInventoryUI
+version: '1.0-SNAPSHOT'
+main: de.weihnachtsmannyt.custominventoryui.CustomInventoryUI
+api-version: '1.21'
+load: STARTUP
+authors: [ Weihnachtsmannyt ]
+description: CustomInventoryUI
+commands:
+  openui:

@@ -19,7 +19,7 @@ public final class Statusgui extends JavaPlugin {
         return instance;
     }
 
-    private final String prefix = "§7[§9Status-Gui§7]§r §7->§r";
+    private final String prefix = "§7[§9Status-Gui§7]§r §7->§r ";
 
 
     @Override

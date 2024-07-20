@@ -46,6 +46,10 @@ public class PrefixManager {
                 System.out.println(Status.getInstance().getConfigVarManager().getStatus_Prefix()+"Register new Team error!");
             }
 
+            if (!FileManager.playerIsRegistered(player)) {
+                Status.getInstance().getFileManager().savePlayerInStatus(player, "Default", "§f");
+            }
+
             if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
                 Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix("§f[" + "Spieler" + "§f] §f");
 
@@ -72,8 +76,6 @@ public class PrefixManager {
             Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).addEntry(player.getDisplayName());
             Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).addEntry(player.getDisplayName());
 
-
-
             Status.getInstance().getFileManager().saveStatusFile();
         }
     }
@@ -86,8 +88,8 @@ public class PrefixManager {
         Status.getInstance().getPrefixManager().setScoreboard();
 
         for (Player target : Bukkit.getOnlinePlayers()) {
-                Status.getInstance().getFileManager().saveStatusFile();
-                Status.getInstance().getPrefixManager().updatePrefix(target);
+            Status.getInstance().getFileManager().saveStatusFile();
+            Status.getInstance().getPrefixManager().updatePrefix(target);
             target.setScoreboard(Status.getInstance().getPrefixManager().getScoreboard(target));
         }
     }

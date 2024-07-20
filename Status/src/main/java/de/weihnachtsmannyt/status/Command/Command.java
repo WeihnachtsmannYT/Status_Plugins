@@ -58,7 +58,7 @@ public class Command implements CommandExecutor {
                                 for (Player target : Bukkit.getOnlinePlayers()) {
                                     p.sendMessage("-player:                     " + statusData.get(target.getUniqueId() + ".player"));
                                     p.sendMessage("-DeathCounter_on_off:        " + statusData.get(target.getUniqueId() + ".p-settings" + ".DeathCounter_on_off"));
-                                    p.sendMessage("-Tablist-Prefix:             " + Objects.requireNonNull(target.getScoreboard().getTeam("001" + target)).getPrefix());
+                                    p.sendMessage("-Tablist-Prefix:             " + Objects.requireNonNull(target.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(target))).getPrefix());
                                     p.sendMessage("-----------------------------------------------------");
                                 }
                             }
