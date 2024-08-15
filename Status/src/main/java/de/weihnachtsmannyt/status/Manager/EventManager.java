@@ -10,10 +10,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.player.PlayerRespawnEvent;
+import org.bukkit.event.player.*;
 
 import java.util.Objects;
 
@@ -117,6 +114,11 @@ public class EventManager implements Listener {
 
     @EventHandler
     public void onPlayerRespawn(PlayerRespawnEvent event){
+        updateAfterDeath(event);
+    }
+
+    @EventHandler
+    public void onPlayerSendCmd(PlayerCommandSendEvent event) {
         updateAfterDeath(event);
     }
 

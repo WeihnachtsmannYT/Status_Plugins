@@ -5,61 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1ff52-4642-4a6e-8e69-cac92a3278f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/CustomInventoryUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/font/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/custom_invisible_paper.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/paper.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/player_head.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/player_head_flat.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/template_skull.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item/template_skull_flat.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_container.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_container_27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/menu_container_name.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/item/transparent_texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/font/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/lang/en_us.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/textures/font/space_nosplit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/space/textures/font/space_split.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/pack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CharRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/EventManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/MethodsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/UiCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo$SpacingCharacters.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/EventManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/MethodsManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/UiCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/GuiElements/ScrollDownItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/GuiElements/ScrollUpItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/krone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/font/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/font/default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CharRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CharRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/EventManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo$SpacingCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo$SpacingCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/EventManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/MethodsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/MethodsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/UiCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/UiCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Command/Command.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" afterDir="false" />
@@ -68,14 +37,9 @@
       <change beforePath="$PROJECT_DIR$/StatusGui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Statusgui.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Statusgui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/HeadManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/HeadManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Statusgui.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Statusgui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -108,6 +72,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -116,6 +83,9 @@
         <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -126,30 +96,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.CustomInventoryUI package.executor": "Run",
-    "Maven.Status build.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "V1.4-RELEASE",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Development/StatusPlugins/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/models/item",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.CustomInventoryUI package.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Status build.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [install,-Pcopy-jars,-X].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [install,-Pcopy-jars].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [install,-U,-Pcopy-jars,-X].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [mvn,clean,install,-U].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;V1.4-RELEASE&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/StatusPlugins/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   },
-  "keyToStringList": {
-    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
-      "22=C:/Program Files/Java/jdk-22"
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;22=C:/Program Files/Java/jdk-22&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\textures\custom\ui" />
       <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\models\item" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -160,37 +136,7 @@
       <recent name="de.weihnachtsmannyt.custominventoryui" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.Status build">
-    <configuration name="CustomInventoryUI package" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="package" />
-              </list>
-            </option>
-            <option name="multimoduleDir" />
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="C:\Development\StatusPlugins\CustomInventoryUI" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="Status build" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -305,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721248374504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Third Update V 1.4-RELEASE&#10;new beta things">
+      <option name="closed" value="true" />
+      <created>1721512923316</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721512923316</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -351,7 +305,8 @@
     <MESSAGE value="Second Update V 1.1-RELEASE" />
     <MESSAGE value="Second Update V 1.2-RELEASE" />
     <MESSAGE value="Third Update V 1.3-RELEASE&#10;update to 1.21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third Update V 1.3-RELEASE&#10;update to 1.21" />
+    <MESSAGE value="Third Update V 1.4-RELEASE&#10;new beta things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Update V 1.4-RELEASE&#10;new beta things" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -361,7 +316,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java</url>
-          <line>64</line>
+          <line>61</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

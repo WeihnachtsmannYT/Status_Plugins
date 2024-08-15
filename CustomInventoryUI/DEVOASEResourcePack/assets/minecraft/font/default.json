@@ -28,6 +28,15 @@
       "type": "bitmap"
     },
     {
+      "ascent": 8,
+      "chars": [
+        "\uF004"
+      ],
+      "file": "custom/ui/krone.png",
+      "height": 10,
+      "type": "bitmap"
+    },
+    {
       "type": "bitmap",
       "file": "space:font/space_split.png",
       "ascent": -32768,

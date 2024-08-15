@@ -6,8 +6,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class CustomInventoryUI extends JavaPlugin {
 
     private static CustomInventoryUI instance;
+
     private MethodsManager methodsManager;
     private UiCommand UiCommand;
+    private CharRepo charrepo;
+    private de.weihnachtsmannyt.custominventoryui.CharRepo CharRepo;
 
     public static CustomInventoryUI getInstance() {
         return instance;
@@ -19,6 +22,7 @@ public final class CustomInventoryUI extends JavaPlugin {
         instance = this;
         this.methodsManager = new MethodsManager();
         this.UiCommand = new UiCommand();
+        this.charrepo = CharRepo;
 
         Bukkit.getPluginManager().registerEvents(new EventManager(), this);
 
@@ -31,5 +35,9 @@ public final class CustomInventoryUI extends JavaPlugin {
 
     public UiCommand getUiCommand() {
         return UiCommand;
+    }
+
+    public CharRepo getCharrepo() {
+        return charrepo;
     }
 }

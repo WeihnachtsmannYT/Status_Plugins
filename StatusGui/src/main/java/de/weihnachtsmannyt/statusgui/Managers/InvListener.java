@@ -182,7 +182,7 @@ public class InvListener implements Listener {
                     Status.getInstance().getFileManager().saveStatusFile();
 
                     Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
-                    p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7Du hast " + localizedName + " " + (statusData.getBoolean(p.getUniqueId() + ".p-settings" + "." + localizedName) ? "an" : "aus") + "geschallten.");
+                    p.sendMessage(Statusgui.getInstance().getPrefix() + "§7Du hast " + localizedName + " " + (statusData.getBoolean(p.getUniqueId() + ".p-settings" + "." + localizedName) ? "an" : "aus") + "geschallten.");
                     event.setCancelled(true);
                 }
                 break;
@@ -296,6 +296,6 @@ public class InvListener implements Listener {
         Status.getInstance().getConfigVarManager().updateVar();
 
         //Send Message
-        p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7Du hast " + localizedName + " " + (configFile.getBoolean(localizedName) ? "an" : "aus") + "geschallten.");
+        p.sendMessage(Statusgui.getInstance().getPrefix() + "§7Du hast " + localizedName + " " + (configFile.getBoolean(localizedName) ? "an" : "aus") + "geschallten.");
     }
 }

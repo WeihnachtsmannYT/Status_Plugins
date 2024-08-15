@@ -1,5 +1,6 @@
 package de.weihnachtsmannyt.status;
 
+import de.weihnachtsmannyt.custominventoryui.CustomInventoryUI;
 import de.weihnachtsmannyt.status.Command.Command;
 import de.weihnachtsmannyt.status.Command.TabComplete;
 import de.weihnachtsmannyt.status.Manager.ConfigVarManager;
@@ -12,6 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Status extends JavaPlugin {
 
     private static Status instance;
+    private static CustomInventoryUI custominventoryuiApi;
 
     //Api
     private PrefixManager prefixManager;
@@ -33,6 +35,8 @@ public final class Status extends JavaPlugin {
         this.prefixManager = new PrefixManager();
         this.fileManager = new FileManager();
         this.configVarManager = new ConfigVarManager();
+
+        custominventoryuiApi = CustomInventoryUI.getInstance();
 
         configVarManager.updateVar();
         Status.getInstance().getPrefixManager().resetAfkAll();
@@ -65,5 +69,9 @@ public final class Status extends JavaPlugin {
 
     public ConfigVarManager getConfigVarManager() {
         return configVarManager;
+    }
+
+    public CustomInventoryUI getCustomInventoryUIApi() {
+        return custominventoryuiApi;
     }
 }

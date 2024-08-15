@@ -21,7 +21,6 @@
         <StatusGuiversion>1.0-RELEASE</StatusGuiversion>
         <AfkApiversion>1.0-RELEASE</AfkApiversion>
         <CustomInventoryUIversion>1.0-SNAPSHOT</CustomInventoryUIversion>
-
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
     </properties>

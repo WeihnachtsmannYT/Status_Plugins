@@ -1,5 +1,6 @@
 package de.weihnachtsmannyt.status.Manager;
 
+import de.weihnachtsmannyt.custominventoryui.CharRepo;
 import de.weihnachtsmannyt.status.Status;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -46,20 +47,23 @@ public class PrefixManager {
                 System.out.println(Status.getInstance().getConfigVarManager().getStatus_Prefix()+"Register new Team error!");
             }
 
+            String crown = CharRepo.getNeg(22) + CharRepo.CROWN + CharRepo.getPos(15);
+            String crowncheck = player.hasPermission("Status.crown") ? crown : "";
+
             if (!FileManager.playerIsRegistered(player)) {
                 Status.getInstance().getFileManager().savePlayerInStatus(player, "Default", "§f");
             }
 
             if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
-                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix("§f[" + "Spieler" + "§f] §f");
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + "Spieler" + "§f] §f");
 
-                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix("§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
                         + "§f[" + "Spieler" + "§f] §f");
             } else {
-                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix("§f[" + statusData.getString(player.getUniqueId() + ".color")
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + statusData.getString(player.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
 
-                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix("§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
                         + "§f[" + statusData.getString(player.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
 

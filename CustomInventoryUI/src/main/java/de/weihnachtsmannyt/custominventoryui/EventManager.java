@@ -34,8 +34,12 @@ public class EventManager implements Listener {
                 break;
 
             case "placeholder":
+                event.setCancelled(true);
+                break;
             default:
                 event.setCancelled(true);
+                System.out.println("Unexpected value: " + MethodsManager.getCustomLocalizedName(event.getCurrentItem()));
+                break;
         }
     }
 }

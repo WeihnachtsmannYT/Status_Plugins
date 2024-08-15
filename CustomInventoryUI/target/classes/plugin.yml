@@ -2,7 +2,7 @@ name: CustomInventoryUI
 version: '1.0-SNAPSHOT'
 main: de.weihnachtsmannyt.custominventoryui.CustomInventoryUI
 api-version: '1.21'
-load: STARTUP
+load: POSTWORLD
 authors: [ Weihnachtsmannyt ]
 description: CustomInventoryUI
 commands:

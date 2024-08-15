@@ -29,7 +29,8 @@ public enum CharRepo {
 
     MENU_CONTAINER_27("\uF001"),
     MENU_BUTTON("\uF002"),
-    MENU_NAME("\uF003");
+    MENU_NAME("\uF003"),
+    CROWN("\uF004");
 
     public final String literal;
 

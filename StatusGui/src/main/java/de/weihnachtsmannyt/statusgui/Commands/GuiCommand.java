@@ -53,7 +53,7 @@ public class GuiCommand implements CommandExecutor {
     }
 
     private void sendUsage(CommandSender sender) {
-        sender.sendMessage("    §c§k!!!!§r§9This Plugin was coded by §cWeihnachtsmannYT§c§k!!!!");
-        sender.sendMessage("            §7Verwendung§8: §9/statusgui       ");
+        sender.sendMessage(Statusgui.getInstance().getPrefix() + "    §c§k!!!!§r§9This Plugin was coded by §cWeihnachtsmannYT§c§k!!!!");
+        sender.sendMessage(Statusgui.getInstance().getPrefix() + "            §7Verwendung§8: §9/statusgui       ");
     }
 }
