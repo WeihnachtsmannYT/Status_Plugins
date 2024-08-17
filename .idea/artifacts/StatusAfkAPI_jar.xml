@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StatusAfkAPI:jar">
+    <output-path>$PROJECT_DIR$/../TestServer/plugins</output-path>
+    <root id="archive" name="StatusAfkAPI.jar">
+      <element id="module-output" name="AfkApi" />
+    </root>
+  </artifact>
+</component>

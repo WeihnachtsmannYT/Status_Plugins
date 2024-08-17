@@ -4,6 +4,6 @@ main: de.weihnachtsmannyt.status.Status
 api-version: 1.21
 authors: [ WeihnachtsmannYT ]
 description: Status Plugin
-depend: [CustomInventoryUI]
+depend: [ CustomInventoryUI ]
 commands:
   status:

@@ -26,10 +26,10 @@ public class PrefixManager {
         Objects.requireNonNull(deathsScoreboard.getTeam(team)).setPrefix("deaths_prefix");
     }
 
-    public void resetAfkAll(){
+    public void resetAfkAll() {
         for (Player target : Bukkit.getOnlinePlayers()) {
             Status.getInstance().getFileManager().saveStatusFile();
-            Status.getInstance().getFileManager().getStatusData().set(target.getUniqueId()+".Afk", false);
+            Status.getInstance().getFileManager().getStatusData().set(target.getUniqueId() + ".Afk", false);
             Status.getInstance().getFileManager().saveStatusFile();
             Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
         }
@@ -43,33 +43,30 @@ public class PrefixManager {
             try {
                 defaultScoreboard.registerNewTeam(playerTeam);
                 deathsScoreboard.registerNewTeam(playerTeam);
-            } catch (Exception e){
-                System.out.println(Status.getInstance().getConfigVarManager().getStatus_Prefix()+"Register new Team error!");
+            } catch (Exception e) {
+                System.out.println(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "Register new Team error!");
             }
-
-            String crown = CharRepo.getNeg(22) + CharRepo.CROWN + CharRepo.getPos(15);
-            String crowncheck = player.hasPermission("Status.crown") ? crown : "";
 
             if (!FileManager.playerIsRegistered(player)) {
                 Status.getInstance().getFileManager().savePlayerInStatus(player, "Default", "§f");
             }
 
             if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
-                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + "Spieler" + "§f] §f");
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + "Spieler" + "§f] §f");
 
-                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
                         + "§f[" + "Spieler" + "§f] §f");
             } else {
-                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + statusData.getString(player.getUniqueId() + ".color")
+                Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + statusData.getString(player.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
 
-                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(crowncheck + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
                         + "§f[" + statusData.getString(player.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
 
             }
 
-            if (statusData.getBoolean(player.getUniqueId() + ".Afk")){
+            if (statusData.getBoolean(player.getUniqueId() + ".Afk")) {
                 Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setSuffix("§r §c[" + "AFK" + "]§r");
                 Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setSuffix("§r §c[" + "AFK" + "]§r");
             } else {
@@ -98,40 +95,63 @@ public class PrefixManager {
         }
     }
 
+    public String CrownCheck(Player player, String type) {
+        Integer pixelAmountNeg = 0;
+        Integer pixelAmountPos = 0;
+
+        String crown = "";
+
+        if (!player.hasPermission("Status.crown")) return "";
+
+        switch (type.toLowerCase()) {
+            case "chat" -> crown = CharRepo.getPos(0) + CharRepo.PET + CharRepo.getPos(3);
+
+            case "tablist" -> crown = CharRepo.getNeg(22) + CharRepo.CROWN + CharRepo.getPos(12);
+
+            case "join/leave" -> crown = CharRepo.getNeg(0) + CharRepo.CROWN + CharRepo.getPos(3);
+
+            default -> {
+                return "";
+            }
+        }
+
+        return player.hasPermission("Status.crown") ? crown : "";
+    }
+
     public Boolean isColorAColor(String Color) {
         return switch (Color.toLowerCase()) {
             case "§" + "0",
-                    "§" + "1",
-                    "§" + "2",
-                    "§" + "3",
-                    "§" + "4",
-                    "§" + "5",
-                    "§" + "6",
-                    "§" + "7",
-                    "§" + "8",
-                    "§" + "9",
-                    "§" + "a",
-                    "§" + "b",
-                    "§" + "c",
-                    "§" + "d",
-                    "§" + "e",
-                    "§" + "f",
-                    "black",
-                    "dark_blue",
-                    "dark_green",
-                    "dark_aqua",
-                    "dark_red",
-                    "dark_purple",
-                    "gold",
-                    "gray",
-                    "dark_gray",
-                    "blue",
-                    "green",
-                    "aqua",
-                    "red",
-                    "light_purple",
-                    "yellow",
-                    "white" -> true;
+                 "§" + "1",
+                 "§" + "2",
+                 "§" + "3",
+                 "§" + "4",
+                 "§" + "5",
+                 "§" + "6",
+                 "§" + "7",
+                 "§" + "8",
+                 "§" + "9",
+                 "§" + "a",
+                 "§" + "b",
+                 "§" + "c",
+                 "§" + "d",
+                 "§" + "e",
+                 "§" + "f",
+                 "black",
+                 "dark_blue",
+                 "dark_green",
+                 "dark_aqua",
+                 "dark_red",
+                 "dark_purple",
+                 "gold",
+                 "gray",
+                 "dark_gray",
+                 "blue",
+                 "green",
+                 "aqua",
+                 "red",
+                 "light_purple",
+                 "yellow",
+                 "white" -> true;
             default -> false;
         };
     }

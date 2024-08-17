@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Status:jar">
+    <output-path>$PROJECT_DIR$/../TestServer/plugins</output-path>
+    <root id="archive" name="Status.jar">
+      <element id="module-output" name="Status" />
+    </root>
+  </artifact>
+</component>

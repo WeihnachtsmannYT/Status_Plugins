@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Status:jar" />
+      <artifact name="StatusAfkAPI:jar" />
+      <artifact name="StatusCustomInventoryUI:jar" />
+      <artifact name="StatusGui:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1ff52-4642-4a6e-8e69-cac92a3278f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui/krone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/StatusAfkAPI_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/StatusCustomInventoryUI_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/StatusGui_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Status_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/shaders/basic.fsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/shaders/basic.vsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/shaders/custom.fsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/shaders/rendertype_text.vsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/shaders/rendertype_text_intensity.vsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/pet/petpet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/font/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/font/default.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CharRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CharRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/java/de/weihnachtsmannyt/custominventoryui/EventManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo$SpacingCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo$SpacingCharacters.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CharRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/CustomInventoryUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/MethodsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/MethodsManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/UiCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/de/weihnachtsmannyt/custominventoryui/UiCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/EventManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/PrefixManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/EventManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Manager/PrefixManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/src/main/java/de/weihnachtsmannyt/statusgui/Managers/InvListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Commands/GuiCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/classes/de/weihnachtsmannyt/statusgui/Managers/InvListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusGui/target/original-StatusGui-1.0-RELEASE.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,39 +96,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.CustomInventoryUI package.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Status build.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.StatusPlugins [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.StatusPlugins [install,-Pcopy-jars,-X].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.StatusPlugins [install,-Pcopy-jars].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.StatusPlugins [install,-U,-Pcopy-jars,-X].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.StatusPlugins [mvn,clean,install,-U].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;V1.4-RELEASE&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;22&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/StatusPlugins/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/textures/custom/ui&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JAR Application.Test Server.executor": "Debug",
+    "Maven.CustomInventoryUI package.executor": "Run",
+    "Maven.Status build.executor": "Debug",
+    "Maven.StatusPlugins [clean,install].executor": "Run",
+    "Maven.StatusPlugins [clean].executor": "Run",
+    "Maven.StatusPlugins [compile].executor": "Run",
+    "Maven.StatusPlugins [deploy].executor": "Run",
+    "Maven.StatusPlugins [install,-Pcopy-jars,-X].executor": "Run",
+    "Maven.StatusPlugins [install,-Pcopy-jars].executor": "Run",
+    "Maven.StatusPlugins [install,-U,-Pcopy-jars,-X].executor": "Run",
+    "Maven.StatusPlugins [mvn,clean,install,-U].executor": "Run",
+    "Maven.StatusPlugins [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "V1.4-RELEASE",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Development/StatusPlugins/CustomInventoryUI/DEVOASEResourcePack/assets/minecraft/shaders/core",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.saveactions"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
-      &quot;22=C:/Program Files/Java/jdk-22&quot;
+  "keyToStringList": {
+    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
+      "22=C:/Program Files/Java/jdk-22"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\shaders\core" />
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\textures\custom\pet" />
       <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\textures\custom\ui" />
       <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\models\item" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\shaders" />
+      <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\shaders\core" />
       <recent name="C:\Development\StatusPlugins\CustomInventoryUI\DEVOASEResourcePack\assets\minecraft\textures\custom\ui" />
       <recent name="C:\Development\StatusPlugins\CustomInventoryUI" />
     </key>
@@ -136,7 +145,24 @@
       <recent name="de.weihnachtsmannyt.custominventoryui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.Test Server">
+    <configuration name="Test Server" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../TestServer/paper-1.21.1-15.jar" />
+      <option name="VM_PARAMETERS" value="-Xmx5G -DIReallyKnowWhatIAmDoingISwear" />
+      <option name="PROGRAM_PARAMETERS" value="nogui" />
+      <option name="WORKING_DIRECTORY" value="C:\Development\TestServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Status build" run_configuration_type="MavenRunConfiguration" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Status:jar" />
+          <artifact name="StatusAfkAPI:jar" />
+          <artifact name="StatusCustomInventoryUI:jar" />
+          <artifact name="StatusGui:jar" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="Status build" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -202,6 +228,10 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JAR Application.Test Server" />
+      <item itemvalue="Maven.Status build" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -259,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721512923316</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Third Update V 1.4-RELEASE&#10;new beta things">
+      <option name="closed" value="true" />
+      <created>1723756123864</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723756123864</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">

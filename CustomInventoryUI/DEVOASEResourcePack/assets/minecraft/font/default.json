@@ -37,6 +37,15 @@
       "type": "bitmap"
     },
     {
+      "ascent": 8,
+      "chars": [
+        "\uF005"
+      ],
+      "file": "custom/pet/petpet.png",
+      "height": 50,
+      "type": "bitmap"
+    },
+    {
       "type": "bitmap",
       "file": "space:font/space_split.png",
       "ascent": -32768,

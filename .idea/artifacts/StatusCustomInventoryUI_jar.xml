@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StatusCustomInventoryUI:jar">
+    <output-path>$PROJECT_DIR$/../TestServer/plugins</output-path>
+    <root id="archive" name="StatusCustomInventoryUI.jar">
+      <element id="module-output" name="CustomInventoryUI" />
+    </root>
+  </artifact>
+</component>

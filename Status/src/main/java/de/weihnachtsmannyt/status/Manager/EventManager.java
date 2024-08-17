@@ -18,6 +18,9 @@ import static de.weihnachtsmannyt.status.Manager.PrefixManager.team;
 
 public class EventManager implements Listener {
 
+    PrefixManager prefixManager = Status.getInstance().getPrefixManager();
+    ConfigVarManager configVarManager = Status.getInstance().getConfigVarManager();
+
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
@@ -27,37 +30,37 @@ public class EventManager implements Listener {
 
         if (!FileManager.playerIsRegistered(p)) {
             Status.getInstance().getFileManager().savePlayerInStatus(p, "Default", "§f");
-            Objects.requireNonNull(Status.getInstance().getPrefixManager().getDefaultScoreboard().getTeam(team)).addEntry(p.getDisplayName());
-            Objects.requireNonNull(Status.getInstance().getPrefixManager().getDeathsScoreboard().getTeam(team)).addEntry(p.getDisplayName());
-            Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
+            Objects.requireNonNull(prefixManager.getDefaultScoreboard().getTeam(team)).addEntry(p.getDisplayName());
+            Objects.requireNonNull(prefixManager.getDeathsScoreboard().getTeam(team)).addEntry(p.getDisplayName());
+            prefixManager.updatePrefixAllPlayers();
         }
 
-        if (Status.getInstance().getConfigVarManager().getJoin_Leave_Message_on_off()) {
+        if (configVarManager.getJoin_Leave_Message_on_off()) {
             if (Objects.equals(statusData.getString(p.getUniqueId() + ".status"), "Default")) {
-                joinMessage=(Status.getInstance().getConfigVarManager().getJoinMessage() + " §f[" + statusData.getString(p.getUniqueId() + ".color") + "Spieler" + "§f] "
+                joinMessage = (prefixManager.CrownCheck(p, "join/leave") + configVarManager.getJoinMessage() + " §f[" + statusData.getString(p.getUniqueId() + ".color") + "Spieler" + "§f] "
                         + statusData.getString(p.getUniqueId() + ".player"));
             } else {
-                joinMessage=(Status.getInstance().getConfigVarManager().getJoinMessage() + " §f[" + statusData.getString(p.getUniqueId() + ".color")
+                joinMessage = (prefixManager.CrownCheck(p, "join/leave") + configVarManager.getJoinMessage() + " §f[" + statusData.getString(p.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(statusData.getString(p.getUniqueId() + ".status"))) + "§f] "
                         + statusData.getString(p.getUniqueId() + ".player"));
             }
         }
 
         for (Player target : Bukkit.getOnlinePlayers()) {
-            if (statusData.getBoolean(target.getUniqueId()+".p-settings"+".Join_Leave_Message_on_off"))
+            if (statusData.getBoolean(target.getUniqueId() + ".p-settings" + ".Join_Leave_Message_on_off"))
                 target.sendMessage(joinMessage);
         }
 
-        statusData.set(p.getUniqueId()+".Afk",false);
+        statusData.set(p.getUniqueId() + ".Afk", false);
 
-        Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
+        prefixManager.updatePrefixAllPlayers();
     }
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
-
         Player p = e.getPlayer();
+
         final String m = e.getMessage().trim();
         final String message = ChatColor.translateAlternateColorCodes('&', e.getMessage());
         float uppercaseLetter = 0;
@@ -66,14 +69,17 @@ public class EventManager implements Listener {
                 uppercaseLetter++;
             }
         }
+
         if (FileManager.StringIsBlocked(e.getMessage())) {
             e.setCancelled(true);
-            p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7Diese Nachricht enthält §9blockierte §7Wörter!");
-        } else if (Status.getInstance().getConfigVarManager().getUppercase_LengthLimit_Toggle() && (uppercaseLetter / (float) m.length() > 0.3 && m.length() > Status.getInstance().getConfigVarManager().getPrefix_LengthLimit())) {
+            p.sendMessage(configVarManager.getStatus_Prefix() + "§7Diese Nachricht enthält §9blockierte §7Wörter!");
+        } else if (configVarManager.getUppercase_LengthLimit_Toggle() && (uppercaseLetter / (float) m.length() > 0.3 && m.length() > configVarManager.getPrefix_LengthLimit())) {
             e.setCancelled(true);
-            p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§9Bitte benutze nicht so viele Großbuchstaben!");
+            p.sendMessage(configVarManager.getStatus_Prefix() + "§9Bitte benutze nicht so viele Großbuchstaben!");
         } else {
-            e.setFormat(Objects.requireNonNull(p.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(p))).getPrefix() + p.getDisplayName() + "§f: §r" + message);
+            e.setFormat(prefixManager.CrownCheck(p, "chat") +
+                    Objects.requireNonNull(p.getScoreboard().getTeam(prefixManager.getTeamByPlayer(p))).getPrefix().replaceFirst(prefixManager.CrownCheck(p, "tablist"), "")
+                    + p.getDisplayName() + "§f: §r" + message);
         }
     }
 
@@ -86,18 +92,18 @@ public class EventManager implements Listener {
 
         if (Status.getInstance().getConfigVarManager().getJoin_Leave_Message_on_off()) {
             if (Objects.equals(statusData.getString(p.getUniqueId() + ".status"), "Default")) {
-                leaveMessage=(Status.getInstance().getConfigVarManager().getLeaveMassage() + " §f[" + statusData.getString(p.getUniqueId() + ".color") + "Spieler" + "§f] " + statusData.getString(p.getUniqueId() + ".player"));
+                leaveMessage = (prefixManager.CrownCheck(p, "join/leave") + Status.getInstance().getConfigVarManager().getLeaveMassage() + " §f[" + statusData.getString(p.getUniqueId() + ".color") + "Spieler" + "§f] " + statusData.getString(p.getUniqueId() + ".player"));
             } else {
-                leaveMessage=(Status.getInstance().getConfigVarManager().getLeaveMassage() + " §f[" + statusData.getString(p.getUniqueId() + ".color") + ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(statusData.getString(p.getUniqueId() + ".status"))) + "§f] " + statusData.getString(p.getUniqueId() + ".player"));
+                leaveMessage = (prefixManager.CrownCheck(p, "join/leave") + Status.getInstance().getConfigVarManager().getLeaveMassage() + " §f[" + statusData.getString(p.getUniqueId() + ".color") + ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(statusData.getString(p.getUniqueId() + ".status"))) + "§f] " + statusData.getString(p.getUniqueId() + ".player"));
             }
         }
 
         for (Player target : Bukkit.getOnlinePlayers()) {
-            if (statusData.getBoolean(target.getUniqueId()+".p-settings"+".Join_Leave_Message_on_off"))
+            if (statusData.getBoolean(target.getUniqueId() + ".p-settings" + ".Join_Leave_Message_on_off"))
                 target.sendMessage(leaveMessage);
         }
 
-        statusData.set(p.getUniqueId()+".Afk",false);
+        statusData.set(p.getUniqueId() + ".Afk", false);
     }
 
     @EventHandler
@@ -113,7 +119,7 @@ public class EventManager implements Listener {
     }
 
     @EventHandler
-    public void onPlayerRespawn(PlayerRespawnEvent event){
+    public void onPlayerRespawn(PlayerRespawnEvent event) {
         updateAfterDeath(event);
     }
 
@@ -124,6 +130,6 @@ public class EventManager implements Listener {
 
     private void updateAfterDeath(Event event) {
         //TODO wrong update after death
-        Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
+        prefixManager.updatePrefixAllPlayers();
     }
 }
