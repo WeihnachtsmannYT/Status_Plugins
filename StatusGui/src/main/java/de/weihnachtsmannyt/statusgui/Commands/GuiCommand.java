@@ -24,7 +24,7 @@ public class GuiCommand implements CommandExecutor {
 
         Inventory inventory = Bukkit.createInventory(null, 3 * 9, "Status Gui");
 
-        if (args.length > 1) {
+        if (args.length != 1) {
             sendUsage(player);
             return true;
         } else {
@@ -44,7 +44,7 @@ public class GuiCommand implements CommandExecutor {
                         ChatColor.WHITE +
                                 Objects.requireNonNull(player.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(player))).getPrefix() +
                                 player.getDisplayName(), "playerSkull"));
-            } catch (Exception _) {
+            } catch (Exception e) {
             }
 
             player.openInventory(inventory);

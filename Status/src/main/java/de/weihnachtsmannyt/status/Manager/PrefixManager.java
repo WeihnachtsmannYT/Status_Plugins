@@ -51,19 +51,20 @@ public class PrefixManager {
                 Status.getInstance().getFileManager().savePlayerInStatus(player, "Default", "§f");
             }
 
+            String deathsString = player.getStatistic(Statistic.DEATHS) > 0 ? "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] " : "";
+
             if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
                 Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + "Spieler" + "§f] §f");
 
-                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + deathsString
                         + "§f[" + "Spieler" + "§f] §f");
             } else {
                 Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + statusData.getString(player.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
 
-                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] "
+                Objects.requireNonNull(deathsScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + deathsString
                         + "§f[" + statusData.getString(player.getUniqueId() + ".color")
                         + ChatColor.translateAlternateColorCodes('&', (statusData.getString(player.getUniqueId() + ".status")) + "§f] §f"));
-
             }
 
             if (statusData.getBoolean(player.getUniqueId() + ".Afk")) {
@@ -96,12 +97,7 @@ public class PrefixManager {
     }
 
     public String CrownCheck(Player player, String type) {
-        Integer pixelAmountNeg = 0;
-        Integer pixelAmountPos = 0;
-
-        String crown = "";
-
-        if (!player.hasPermission("Status.crown")) return "";
+        String crown;
 
         switch (type.toLowerCase()) {
             case "chat" -> crown = CharRepo.getPos(0) + CharRepo.PET + CharRepo.getPos(3);
@@ -110,12 +106,15 @@ public class PrefixManager {
 
             case "join/leave" -> crown = CharRepo.getNeg(0) + CharRepo.CROWN + CharRepo.getPos(3);
 
-            default -> {
-                return "";
-            }
+            default -> crown = "";
         }
 
-        return player.hasPermission("Status.crown") ? crown : "";
+        if (!player.hasPermission("Status.crown")) crown = "";
+
+
+        if (!Status.getInstance().getDebug()) crown = "";
+
+        return crown;
     }
 
     public Boolean isColorAColor(String Color) {

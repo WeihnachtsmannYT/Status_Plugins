@@ -1,8 +1,9 @@
-package de.weihnachtsmannyt.statusgui.Managers;
+package de.weihnachtsmannyt.statusgui.Listener;
 
 import de.weihnachtsmannyt.status.Status;
 import de.weihnachtsmannyt.statusgui.GuiElements.ScrollDownItem;
 import de.weihnachtsmannyt.statusgui.GuiElements.ScrollUpItem;
+import de.weihnachtsmannyt.statusgui.Managers.MethodsManager;
 import de.weihnachtsmannyt.statusgui.Statusgui;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -105,8 +106,8 @@ public class InvListener implements Listener {
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                     Item headItem = new SimpleItem(Statusgui.getInstance().getMethodsManager().getHead(onlinePlayer, "Status von " + onlinePlayer.getDisplayName(),
                             ChatColor.WHITE +
-                                    Objects.requireNonNull(p.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(onlinePlayer))).getPrefix() +
-                                    p.getDisplayName(), "getSkull"));
+                                    Objects.requireNonNull(onlinePlayer.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(onlinePlayer))).getPrefix() +
+                                    onlinePlayer.getDisplayName(), "getSkull"));
                     items.add(headItem);
                 }
 
@@ -172,6 +173,7 @@ public class InvListener implements Listener {
 
                 String localizedName = MethodsManager.getCustomLocalizedName(event.getCurrentItem());
 
+                assert localizedName != null;
                 if (localizedName.equals("AutoAfk_on_off")) {
                     event.setCancelled(true);
                     return;
@@ -284,10 +286,11 @@ public class InvListener implements Listener {
         Status.getInstance().getConfigVarManager().updateVar();
 
         //Define Variables
-        String localizedName = MethodsManager.getCustomLocalizedName(event.getCurrentItem());
+        String localizedName = MethodsManager.getCustomLocalizedName(Objects.requireNonNull(event.getCurrentItem()));
         FileConfiguration configFile = Status.getInstance().getConfig();
 
         //Reset Toggle
+        assert localizedName != null;
         event.getView().setItem(event.getSlot(), Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(configFile.getBoolean(localizedName) ? Material.LIME_DYE : Material.RED_DYE, 1, 1, configFile.getBoolean(localizedName) ? "on" : "off", null, localizedName));
 
         //Update Stuff

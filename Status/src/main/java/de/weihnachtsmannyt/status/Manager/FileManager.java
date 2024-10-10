@@ -42,21 +42,21 @@ public class FileManager {
     }
 
     public void savePlayerInStatus(Player player, String status, String color) {
-        if (playerIsRegistered(player)){
+        if (playerIsRegistered(player)) {
             statusData.set(player.getUniqueId() + ".player", player.getName());
             statusData.set(player.getUniqueId() + ".status", status);
             statusData.set(player.getUniqueId() + ".color", color);
-        }else{
+        } else {
             savePlayerInStatusWithPersonalWithAfk(player, status, color, true, true, true, true, false);
         }
     }
 
     public void savePlayerInStatusWithPersonalWithAfk(Player player, String status, String color,
-                                               Boolean Status_Prefix_on_off,
-                                               Boolean Join_Leave_Message_on_off,
-                                               Boolean DeathCounter_on_off,
-                                               Boolean AutoAfk_on_off,
-                                               Boolean Afk) {
+                                                      Boolean Status_Prefix_on_off,
+                                                      Boolean Join_Leave_Message_on_off,
+                                                      Boolean DeathCounter_on_off,
+                                                      Boolean AutoAfk_on_off,
+                                                      Boolean Afk) {
 
         int value = 1;
 
@@ -70,11 +70,11 @@ public class FileManager {
         statusData.set(player.getUniqueId() + ".Afk", Afk);
 
         //personal Settings
-        ConfigurationSection playerSettings = statusData.createSection(player.getUniqueId()+".p-settings");
-        playerSettings.set(".Status_Prefix_on_off",Status_Prefix_on_off);
-        playerSettings.set(".Join_Leave_Message_on_off",Join_Leave_Message_on_off);
-        playerSettings.set(".DeathCounter_on_off",DeathCounter_on_off);
-        playerSettings.set(".AutoAfk_on_off",AutoAfk_on_off);
+        ConfigurationSection playerSettings = statusData.createSection(player.getUniqueId() + ".p-settings");
+        playerSettings.set(".Status_Prefix_on_off", Status_Prefix_on_off);
+        playerSettings.set(".Join_Leave_Message_on_off", Join_Leave_Message_on_off);
+        playerSettings.set(".DeathCounter_on_off", DeathCounter_on_off);
+        playerSettings.set(".AutoAfk_on_off", AutoAfk_on_off);
 
         Status.getInstance().getFileManager().saveStatusFile();
     }

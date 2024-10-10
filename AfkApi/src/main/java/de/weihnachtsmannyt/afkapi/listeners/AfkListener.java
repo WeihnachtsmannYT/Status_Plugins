@@ -16,18 +16,20 @@ public class AfkListener implements Listener {
     }
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent e){
+    public void onPlayerJoin(PlayerJoinEvent e) {
         afkManager.playerJoined(e.getPlayer());
     }
 
     @EventHandler
-    public void onPlayerQuit(PlayerQuitEvent e){
+    public void onPlayerQuit(PlayerQuitEvent e) {
         afkManager.playerLeft(e.getPlayer());
     }
 
     @EventHandler
-    public void onPlayerMovement(PlayerMoveEvent e){
-        afkManager.playerMoved(e.getPlayer());
+    public void onPlayerMovement(PlayerMoveEvent e) {
+        if (e.getTo() != e.getFrom()) {
+            afkManager.playerMoved(e.getPlayer());
+        }
     }
 
 }

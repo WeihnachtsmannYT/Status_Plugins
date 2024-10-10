@@ -23,7 +23,7 @@ public class Command implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, org.bukkit.command.Command cmd, String label, String[] args) {
         if (!(sender instanceof Player p)) {
-            System.out.println("You must be a player!") ;
+            System.out.println("You must be a player!");
             return false;
         }
 
@@ -34,11 +34,11 @@ public class Command implements CommandExecutor {
 
         switch (args[0].toLowerCase()) { //status ___
             case "help" -> sendUsage(p);
-            case "update" -> {
+            case "update" -> { //update deaths-debugger
                 if (p.hasPermission("status.update")) {
                     Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
                     p.sendMessage("Status has been updated");
-                    if (args.length==2) {
+                    if (args.length == 2) {
                         switch (args[1].toLowerCase()) {
                             case "debug" -> {
                                 Status.getInstance().getFileManager().saveStatusFile();
@@ -67,7 +67,7 @@ public class Command implements CommandExecutor {
                             }
                         }
                     }
-                }else sendUsage(p);
+                } else sendUsage(p);
             }
             case "reset" -> {
                 switch (args.length) {

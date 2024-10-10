@@ -24,6 +24,8 @@ public final class Status extends JavaPlugin {
         return instance;
     }
 
+    private final Boolean debug = false;
+
     @Override
     public void onEnable() {
         // Plugin startup logic
@@ -73,5 +75,9 @@ public final class Status extends JavaPlugin {
 
     public CustomInventoryUI getCustomInventoryUIApi() {
         return custominventoryuiApi;
+    }
+
+    public Boolean getDebug() {
+        return debug;
     }
 }

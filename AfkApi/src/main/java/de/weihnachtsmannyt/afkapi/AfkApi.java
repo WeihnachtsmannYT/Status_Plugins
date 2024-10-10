@@ -57,4 +57,8 @@ public final class AfkApi extends JavaPlugin {
         statusApi = Status.getInstance();
         return statusApi;
     }
+
+    public String getPrefix() {
+        return prefix;
+    }
 }
