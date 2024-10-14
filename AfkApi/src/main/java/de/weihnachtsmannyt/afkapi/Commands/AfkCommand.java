@@ -55,7 +55,6 @@ public class AfkCommand implements CommandExecutor {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + " §7You are now AFK.");
                 AfkManager.setPlayerAfk(p, true, true);
                 afkManager.announceToOthers(p, true);
-
             } else {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + " §7You are no longer AFK.");
                 AfkManager.setPlayerAfk(p, false, true);

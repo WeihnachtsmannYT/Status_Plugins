@@ -17,6 +17,8 @@ public class AfkManager {
     public final HashMap<Player, Long> lastMovement = new HashMap<>();
     public final HashMap<Player, Boolean> previousData = new HashMap<>();
 
+    private final HashMap<Player, Long> timeSinceAfk = new HashMap<>();
+
     public static void setPlayerAfk(Player target, Boolean Afk, Boolean forced) {
         AfkApi.getInstance().getStatusApi().getFileManager().saveStatusFile();
         if (forced) {
@@ -32,16 +34,13 @@ public class AfkManager {
         AfkApi.getInstance().getStatusApi().getPrefixManager().updatePrefixAllPlayers();
     }
 
-    public HashMap<Player, Long> getLastMovement() {
-        return lastMovement;
-    }
-
     public void playerJoined(Player player) {
         lastMovement.put(player, System.currentTimeMillis());
     }
 
     public void playerLeft(Player player) {
         lastMovement.remove(player);
+        timeSinceAfk.remove(player);
     }
 
     public void playerMoved(Player player) {
@@ -67,17 +66,14 @@ public class AfkManager {
         return false;
     }
 
-    public long getLastMovementTime(Player player) {
-        return System.currentTimeMillis() - lastMovement.get(player);
+    public long getSinceLastMovementTime(Player player) {
+        return System.currentTimeMillis() - timeSinceAfk.get(player);
     }
 
-    public String getLastMovementTimeString(Player player) {
-        long timeElapsed = getLastMovementTime(player); // Time in milliseconds
-        System.out.println("Time elapsed in milliseconds: " + timeElapsed);
-
+    public String getSinceLastMovementTimeString(Player player) {
+        long timeElapsed = getSinceLastMovementTime(player); // Time in milliseconds
         // Convert milliseconds to seconds
         long totalSeconds = timeElapsed / 1000L;
-        System.out.println("Total seconds: " + totalSeconds);
 
         // Calculate days, hours, minutes, and seconds
         long days = totalSeconds / (24L * 3600L);
@@ -89,7 +85,11 @@ public class AfkManager {
         long minutes = totalSeconds / 60L;
         long seconds = totalSeconds % 60L;
 
-        System.out.println("Days: " + days + ", Hours: " + hours + ", Minutes: " + minutes + ", Seconds: " + seconds);
+        if (Status.getInstance().getDebug()) {
+            System.out.println("Time elapsed in milliseconds: " + timeElapsed);
+            System.out.println("Total seconds: " + totalSeconds);
+            System.out.println("Days: " + days + ", Hours: " + hours + ", Minutes: " + minutes + ", Seconds: " + seconds);
+        }
 
         // Build the output string, only showing values above 0
         StringBuilder timeFormat = new StringBuilder();
@@ -123,11 +123,13 @@ public class AfkManager {
             previousData.put(player, false);
             AfkManager.setPlayerAfk(player, false, false);
             lastMovement.put(player, System.currentTimeMillis());
+            timeSinceAfk.remove(player);
             return false;
         } else {
             previousData.put(player, true);
             AfkManager.setPlayerAfk(player, true, false);
             lastMovement.put(player, -1L);
+            timeSinceAfk.put(player, System.currentTimeMillis());
             return true;
         }
     }

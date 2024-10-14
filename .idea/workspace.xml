@@ -17,17 +17,14 @@
       <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Managers/AfkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Managers/AfkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Tasks/MovementChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Tasks/MovementChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Managers/AfkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Managers/AfkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Tasks/MovementChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Tasks/MovementChecker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" afterDir="false" />
     </list>
@@ -314,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728913523011</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update V 1.41-BETA&#10;new beta things">
+      <option name="closed" value="true" />
+      <created>1728915774048</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728915774048</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">

@@ -27,7 +27,7 @@ public class IsAfkCommand implements CommandExecutor {
 
             if (afkManager.isAFK(p)) {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 You are currently AFK.");
-                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since:" + AfkApi.getInstance().getAfkManager().getLastMovementTimeString(p));
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since: " + AfkApi.getInstance().getAfkManager().getSinceLastMovementTimeString(p));
             } else {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 You are not currently AFK.");
             }
@@ -37,7 +37,7 @@ public class IsAfkCommand implements CommandExecutor {
 
             if (afkManager.isAFK(target)) {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 " + target.getDisplayName() + " is currently AFK.");
-                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since:" + AfkApi.getInstance().getAfkManager().getLastMovementTimeString(target));
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since: " + AfkApi.getInstance().getAfkManager().getSinceLastMovementTimeString(target));
             } else {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 " + target.getDisplayName() + " is not currently AFK.");
             }
