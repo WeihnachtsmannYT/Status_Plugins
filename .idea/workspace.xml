@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1ff52-4642-4a6e-8e69-cac92a3278f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Manager/UpdateManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/src/main/java/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.java" afterDir="false" />
@@ -20,11 +21,14 @@
       <change beforePath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/AfkCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Commands/IsAfkCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Tasks/MovementChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/classes/de/weihnachtsmannyt/afkapi/Tasks/MovementChecker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AfkApi/target/original-AfkApi-1.0-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CustomInventoryUI/target/original-CustomInventoryUI-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/java/de/weihnachtsmannyt/status/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/src/main/resources/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/Status-1.2.7-RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/classes/de/weihnachtsmannyt/status/Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Status/target/original-Status-1.2.7-RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/StatusGui/target/StatusGui-1.0-RELEASE.jar" afterDir="false" />
     </list>
@@ -86,51 +90,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JAR Application.Test Server.executor": "Debug",
-    "Maven.CustomInventoryUI package.executor": "Run",
-    "Maven.Status build.executor": "Debug",
-    "Maven.StatusGui [clean].executor": "Run",
-    "Maven.StatusGui [compile].executor": "Run",
-    "Maven.StatusGui [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.StatusGui [org.apache.maven.plugins:maven-jar-plugin:3.3.0:jar].executor": "Run",
-    "Maven.StatusGui [package].executor": "Run",
-    "Maven.StatusGui [validate].executor": "Run",
-    "Maven.StatusPlugins [clean,install].executor": "Run",
-    "Maven.StatusPlugins [clean].executor": "Run",
-    "Maven.StatusPlugins [compile].executor": "Run",
-    "Maven.StatusPlugins [deploy].executor": "Run",
-    "Maven.StatusPlugins [install,-Pcopy-jars,-X].executor": "Run",
-    "Maven.StatusPlugins [install,-Pcopy-jars].executor": "Run",
-    "Maven.StatusPlugins [install,-U,-Pcopy-jars,-X].executor": "Run",
-    "Maven.StatusPlugins [mvn,clean,install,-U].executor": "Run",
-    "Maven.StatusPlugins [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.StatusPlugins [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
-    "Maven.StatusPlugins [package].executor": "Run",
-    "Maven.StatusPlugins [test].executor": "Run",
-    "Maven.StatusPlugins [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "V1.41-BETA",
-    "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Development/StatusPlugins/StatusGui",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3739903",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JAR Application.Test Server.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.CustomInventoryUI package.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Status build.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.StatusGui [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusGui [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusGui [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusGui [org.apache.maven.plugins:maven-jar-plugin:3.3.0:jar].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusGui [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusGui [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [install,-Pcopy-jars,-X].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [install,-Pcopy-jars].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [install,-U,-Pcopy-jars,-X].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [mvn,clean,install,-U].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StatusPlugins [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;V1.41-BETA&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/StatusPlugins/StatusGui&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3739903&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   },
-  "keyToStringList": {
-    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
-      "22=C:/Program Files/Java/jdk-22"
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;22=C:/Program Files/Java/jdk-22&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Development\StatusPlugins\StatusGui" />
@@ -319,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728915774048</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update V 1.41-BETA&#10;new beta things">
+      <option name="closed" value="true" />
+      <created>1728918776654</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728918776654</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">

@@ -25,6 +25,14 @@ public class AfkCommand implements CommandExecutor {
             return false;
         }
 
+        if (args[0].equalsIgnoreCase("test") && Status.getInstance().getDebug()) {
+            long newMovementTime = System.currentTimeMillis() - AfkApi.getInstance().getAfkManager().getMOVEMENT_THRESHOLD() - 5000L;
+            AfkApi.getInstance().getAfkManager().getLastMovement().put(p, newMovementTime);
+            AfkApi.getInstance().getAfkManager().getTimeSinceAfk().put(p, System.currentTimeMillis());
+            p.sendMessage("Afk Api testing...");
+            return true; // Use true here to indicate successful command execution
+        }
+
         if (args.length > 1) {
             sendUsage(p);
             return false;

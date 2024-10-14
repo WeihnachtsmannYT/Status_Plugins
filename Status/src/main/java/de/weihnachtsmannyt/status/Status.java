@@ -3,10 +3,7 @@ package de.weihnachtsmannyt.status;
 import de.weihnachtsmannyt.custominventoryui.CustomInventoryUI;
 import de.weihnachtsmannyt.status.Command.Command;
 import de.weihnachtsmannyt.status.Command.TabComplete;
-import de.weihnachtsmannyt.status.Manager.ConfigVarManager;
-import de.weihnachtsmannyt.status.Manager.EventManager;
-import de.weihnachtsmannyt.status.Manager.FileManager;
-import de.weihnachtsmannyt.status.Manager.PrefixManager;
+import de.weihnachtsmannyt.status.Manager.*;
 import org.bukkit.Bukkit;
 import org.bukkit.GameRule;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -21,11 +18,13 @@ public final class Status extends JavaPlugin {
     private FileManager fileManager;
     private ConfigVarManager configVarManager;
 
+    private final Boolean debug = false;
+
     public static Status getInstance() {
         return instance;
     }
 
-    private final Boolean debug = true;
+    private UpdateManager updateManager;
 
     //TODO: "your condition"? "step if true":"step if condition fails"
 
@@ -40,6 +39,7 @@ public final class Status extends JavaPlugin {
         this.prefixManager = new PrefixManager();
         this.fileManager = new FileManager();
         this.configVarManager = new ConfigVarManager();
+
 
         custominventoryuiApi = CustomInventoryUI.getInstance();
 
@@ -57,6 +57,11 @@ public final class Status extends JavaPlugin {
         if (debug) {
             Status.getInstance().activateDebuggingMode();
         }
+
+        saveDefaultConfig();
+
+        // Initialize UpdateManager
+        updateManager = new UpdateManager(this);
     }
 
     @Override

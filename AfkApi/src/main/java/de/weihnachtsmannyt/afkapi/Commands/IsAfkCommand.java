@@ -24,7 +24,6 @@ public class IsAfkCommand implements CommandExecutor {
         }
 
         if (args.length == 0) {
-
             if (afkManager.isAFK(p)) {
                 p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 You are currently AFK.");
                 p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since: " + AfkApi.getInstance().getAfkManager().getSinceLastMovementTimeString(p));

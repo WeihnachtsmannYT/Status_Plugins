@@ -5,5 +5,13 @@ JoinMessage: §7[§a+§7]§f
 LeaveMassage: §7[§c-§7]§f
 DeathCounter-on/off: true
 BlockedWords-Toggle: false
-Prefix-LengthLimit: 5
+Prefix-LengthLimit: 7
 Uppercase/LengthLimit-Toggle: false
+current_version: "1-2-7-RELEASE"
+new_features:
+  - "Added /statusgui"
+  - "Added status and color change in Gui"
+  - "Fixed various bugs."
+previous_versions:
+  '1-2-6-RELEASE':
+    - "added /scale"

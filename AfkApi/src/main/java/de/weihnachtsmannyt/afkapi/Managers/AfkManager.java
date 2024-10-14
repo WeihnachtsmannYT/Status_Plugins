@@ -19,6 +19,18 @@ public class AfkManager {
 
     private final HashMap<Player, Long> timeSinceAfk = new HashMap<>();
 
+    public long getMOVEMENT_THRESHOLD() {
+        return MOVEMENT_THRESHOLD;
+    }
+
+    public HashMap<Player, Long> getLastMovement() {
+        return lastMovement;
+    }
+
+    public HashMap<Player, Long> getTimeSinceAfk() {
+        return timeSinceAfk;
+    }
+
     public static void setPlayerAfk(Player target, Boolean Afk, Boolean forced) {
         AfkApi.getInstance().getStatusApi().getFileManager().saveStatusFile();
         if (forced) {
