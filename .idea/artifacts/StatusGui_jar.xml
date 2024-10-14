@@ -3,6 +3,28 @@
     <output-path>$PROJECT_DIR$/../TestServer/plugins</output-path>
     <root id="archive" name="StatusGui.jar">
       <element id="module-output" name="StatusGui" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r1/1.38/inventory-access-r1-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r2/1.38/inventory-access-r2-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r3/1.38/inventory-access-r3-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r4/1.38/inventory-access-r4-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r5/1.38/inventory-access-r5-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r6/1.38/inventory-access-r6-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r7/1.38/inventory-access-r7-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r8/1.38/inventory-access-r8-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r9/1.38/inventory-access-r9-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r10/1.38/inventory-access-r10-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r11/1.38/inventory-access-r11-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r12/1.38/inventory-access-r12-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r13/1.38/inventory-access-r13-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r14/1.38/inventory-access-r14-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r15/1.38/inventory-access-r15-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r16/1.38/inventory-access-r16-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r17/1.38/inventory-access-r17-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r18/1.38/inventory-access-r18-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r19/1.38/inventory-access-r19-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access-r20/1.38/inventory-access-r20-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/inventory-access/1.38/inventory-access-1.38.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xyz/xenondevs/invui/invui-core/1.38/invui-core-1.38.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

@@ -1,7 +1,6 @@
 package de.weihnachtsmannyt.status.Command;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Color;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
@@ -26,13 +25,20 @@ public class TabComplete implements TabCompleter {
             list.add("set");
             list.add("reset");
             list.add("get");
+
+            if (sender.hasPermission("status.update")) {
+                list.add("update");
+            }
         }
         if (args.length == 2) {
-
-            //TODO: Fix this ->
-
-            String operator = args[1].toLowerCase();
+            String operator = args[0].toLowerCase();
             switch (operator) {
+                case "update":
+                    if (sender.hasPermission("status.update")) {
+                        list.add("debug");
+                        list.add("deaths-debugger");
+                    }
+                    break;
                 case "reset":
                     if (sender.hasPermission("status.admin")) {
                         for (Player online : Bukkit.getOnlinePlayers()) {
@@ -49,7 +55,7 @@ public class TabComplete implements TabCompleter {
                     break;
             }
         }
-        if (args.length == 3) {
+        if (args.length == 3 && args[0].equalsIgnoreCase("set")) {
             for (int i = 1; i < 10; i++) {
                 list.add("&" + i);
             }
@@ -75,7 +81,7 @@ public class TabComplete implements TabCompleter {
             list.add("white");
         }
 
-        if (args.length == 4 && sender.hasPermission("status.admin")) {
+        if (args.length == 4 && sender.hasPermission("status.admin") && args[0].equalsIgnoreCase("set")) {
             for (Player online : Bukkit.getOnlinePlayers()) {
                 list.add(online.getName());
             }

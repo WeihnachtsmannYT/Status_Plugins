@@ -27,7 +27,9 @@ public class AfkListener implements Listener {
 
     @EventHandler
     public void onPlayerMovement(PlayerMoveEvent e) {
-        if (e.getTo() != e.getFrom()) {
+        if ((e.getTo().getX() != e.getFrom().getX())
+                || (e.getTo().getY() != e.getFrom().getY())
+                || (e.getTo().getZ() != e.getFrom().getZ())) {
             afkManager.playerMoved(e.getPlayer());
         }
     }

@@ -51,7 +51,7 @@ public class PrefixManager {
                 Status.getInstance().getFileManager().savePlayerInStatus(player, "Default", "§f");
             }
 
-            String deathsString = player.getStatistic(Statistic.DEATHS) > 0 ? "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] " : "";
+            String deathsString = "§f[" + player.getStatistic(Statistic.DEATHS) + "§f] ";
 
             if (Objects.equals(statusData.getString(player.getUniqueId() + ".status"), "Default")) {
                 Objects.requireNonNull(defaultScoreboard.getTeam(playerTeam)).setPrefix(this.CrownCheck(player, "tablist") + "§f[" + "Spieler" + "§f] §f");

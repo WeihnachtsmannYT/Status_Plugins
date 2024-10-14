@@ -7,6 +7,7 @@ import de.weihnachtsmannyt.statusgui.Managers.HeadManager;
 import de.weihnachtsmannyt.statusgui.Managers.MethodsManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import xyz.xenondevs.invui.InvUI;
 
 import java.util.Objects;
 
@@ -35,6 +36,9 @@ public final class Statusgui extends JavaPlugin {
         //Internal Api
         this.methodsManager = new MethodsManager();
         this.headManager = new HeadManager();
+
+        //InvUI Instance
+        InvUI.getInstance().setPlugin(this);
 
         statusApi = Status.getInstance();
 

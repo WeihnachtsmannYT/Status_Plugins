@@ -1,7 +1,11 @@
 de\weihnachtsmannyt\statusgui\Statusgui.class
+de\weihnachtsmannyt\statusgui\GuiElements\BackItem.class
 de\weihnachtsmannyt\statusgui\GuiElements\ScrollDownItem.class
 de\weihnachtsmannyt\statusgui\Managers\MethodsManager.class
+de\weihnachtsmannyt\statusgui\GuiElements\acceptSetItem.class
 de\weihnachtsmannyt\statusgui\Listener\InvListener.class
 de\weihnachtsmannyt\statusgui\GuiElements\ScrollUpItem.class
+de\weihnachtsmannyt\statusgui\GuiElements\colorItems$1.class
 de\weihnachtsmannyt\statusgui\Managers\HeadManager.class
+de\weihnachtsmannyt\statusgui\GuiElements\colorItems.class
 de\weihnachtsmannyt\statusgui\Commands\GuiCommand.class

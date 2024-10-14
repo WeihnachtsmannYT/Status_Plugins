@@ -1,8 +1,10 @@
 package de.weihnachtsmannyt.statusgui.Listener;
 
 import de.weihnachtsmannyt.status.Status;
+import de.weihnachtsmannyt.statusgui.GuiElements.BackItem;
 import de.weihnachtsmannyt.statusgui.GuiElements.ScrollDownItem;
 import de.weihnachtsmannyt.statusgui.GuiElements.ScrollUpItem;
+import de.weihnachtsmannyt.statusgui.GuiElements.acceptSetItem;
 import de.weihnachtsmannyt.statusgui.Managers.MethodsManager;
 import de.weihnachtsmannyt.statusgui.Statusgui;
 import org.bukkit.Bukkit;
@@ -31,7 +33,7 @@ import java.util.Objects;
 
 public class InvListener implements Listener {
 
-    String names = "Status Gui|Status Set|Status Get|Status A-Settings|Status P-Settings";
+    String names = "Status Gui|Status Set|Status Get|Set your Color|Status A-Settings|Status P-Settings";
 
     @EventHandler
     public void onInvClick(InventoryClickEvent event) {
@@ -42,7 +44,8 @@ public class InvListener implements Listener {
 
         YamlConfiguration statusData = Status.getInstance().getFileManager().getStatusData();
 
-        @NotNull ItemBuilder placeholder = new ItemBuilder(Material.BLACK_STAINED_GLASS_PANE).setDisplayName("§r");
+        @NotNull ItemBuilder placeholder = new ItemBuilder(Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.BLACK_STAINED_GLASS_PANE, 0, 1, "§r", null, "placeholder"));
+        @NotNull ItemBuilder placeholder_t = new ItemBuilder(Statusgui.getInstance().getMethodsManager().CreateItemWithMaterial(Material.WHITE_STAINED_GLASS_PANE, 0, 1, "§r", null, "placeholder"));
 
         switch (Objects.requireNonNull(MethodsManager.getCustomLocalizedName(event.getCurrentItem()))) {
             case "close":
@@ -50,6 +53,7 @@ public class InvListener implements Listener {
                 event.setCancelled(true);
                 break;
             case "playerSkull":
+            case "§r":
             case "placeholder":
                 event.setCancelled(true);
                 break;
@@ -64,14 +68,12 @@ public class InvListener implements Listener {
 
                     Item back = new SimpleItem(Statusgui.getInstance().getMethodsManager().CreateSkull("§7Zurück", "zurück",
                             "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFlODFmODA4Nzk3ZjVmNmYxODk2OTM0MTU0MzcyMzNiYjQ0YzQyZDM1YzczNzA4OTIyZTMwZGY4MmRjM2M5MiJ9fX0="));
-                    Item accept = new SimpleItem(Statusgui.getInstance().getMethodsManager().CreateSkull("§aAnnehmen", "accept",
-                            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0="));
 
                     Gui setInv = Gui.normal().setStructure(
                                     "x # y"
                             )
                             .addIngredient('x', back)
-                            .addIngredient('y', accept)
+                            .addIngredient('y', new acceptSetItem())
                             .build();
 
                     setInv.setBackground(placeholder);
@@ -80,7 +82,6 @@ public class InvListener implements Listener {
                             .setViewer(p)
                             .setTitle("Status Set")
                             .setGui(setInv)
-                            //.addRenameHandler(s -> p.sendMessage(s))
                             .build();
 
                     window.open();
@@ -88,38 +89,35 @@ public class InvListener implements Listener {
                 }
                 event.setCancelled(true);
                 break;
-            case "setConfirm":
-                Inventory setInvColor = Bukkit.createInventory(p, 3 * 9, event.getView().getTitle());
-                p.openInventory(setInvColor);
-                Statusgui.getInstance().getStatusApi().getPrefixManager().updatePrefixAllPlayers();
-                event.setCancelled(true);
-                break;
-            case "setColor":
-                // ItemStack setColor = event.getCurrentItem();
             case "get":
                 Item border = new SimpleItem(placeholder);
+                Item trenner = new SimpleItem(placeholder_t);
 
                 // an example list of items to display
                 List<Item> items = new ArrayList<>();
 
                 // Loop through all online players
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-                    Item headItem = new SimpleItem(Statusgui.getInstance().getMethodsManager().getHead(onlinePlayer, "Status von " + onlinePlayer.getDisplayName(),
+                    Item headItem = new SimpleItem(Statusgui.getInstance().getMethodsManager().getHead(onlinePlayer, "Dein Status",
                             ChatColor.WHITE +
                                     Objects.requireNonNull(onlinePlayer.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(onlinePlayer))).getPrefix() +
-                                    onlinePlayer.getDisplayName(), "getSkull"));
+                                    onlinePlayer.getDisplayName() +
+                                    Objects.requireNonNull(onlinePlayer.getScoreboard().getTeam(Status.getInstance().getPrefixManager().getTeamByPlayer(onlinePlayer))).getSuffix(),
+                            "getSkull"));
                     items.add(headItem);
                 }
 
                 Gui getInv = ScrollGui.items()
                         .setStructure(
-                                "x x x x x x x x u",
-                                "x x x x x x x x #",
-                                "x x x x x x x x #",
-                                "x x x x x x x x #",
-                                "x x x x x x x x d")
-                        .addIngredient('x', Markers.CONTENT_LIST_SLOT_VERTICAL)
+                                "x x x x x x x ; u",
+                                "x x x x x x x ; #",
+                                "x x x x x x x ; #",
+                                "x x x x x x x ; b",
+                                "x x x x x x x ; d")
+                        .addIngredient('x', Markers.CONTENT_LIST_SLOT_HORIZONTAL)
                         .addIngredient('#', border)
+                        .addIngredient(';', trenner)
+                        .addIngredient('b', new BackItem())
                         .addIngredient('u', new ScrollUpItem())
                         .addIngredient('d', new ScrollDownItem())
                         .setContent(items)
@@ -272,10 +270,10 @@ public class InvListener implements Listener {
                 toggleUpdater(event, p);
                 event.setCancelled(true);
                 break;
-
             default:
                 event.setCancelled(true);
                 System.out.println("Unexpected value: " + MethodsManager.getCustomLocalizedName(event.getCurrentItem()));
+                break;
         }
         Status.getInstance().getFileManager().saveStatusFile();
     }

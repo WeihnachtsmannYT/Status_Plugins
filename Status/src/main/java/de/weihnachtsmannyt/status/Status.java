@@ -8,6 +8,7 @@ import de.weihnachtsmannyt.status.Manager.EventManager;
 import de.weihnachtsmannyt.status.Manager.FileManager;
 import de.weihnachtsmannyt.status.Manager.PrefixManager;
 import org.bukkit.Bukkit;
+import org.bukkit.GameRule;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Status extends JavaPlugin {
@@ -24,7 +25,7 @@ public final class Status extends JavaPlugin {
         return instance;
     }
 
-    private final Boolean debug = false;
+    private final Boolean debug = true;
 
     @Override
     public void onEnable() {
@@ -49,6 +50,11 @@ public final class Status extends JavaPlugin {
         Status.getInstance().getPrefixManager().setScoreboard();
 
         Status.getInstance().getPrefixManager().updatePrefixAllPlayers();
+
+        //Debugger
+        if (debug) {
+            Status.getInstance().activateDebuggingMode();
+        }
     }
 
     @Override
@@ -79,5 +85,13 @@ public final class Status extends JavaPlugin {
 
     public Boolean getDebug() {
         return debug;
+    }
+
+    public void activateDebuggingMode() {
+        Bukkit.getServer().getWorld("world").setTime(1000);
+        Bukkit.getServer().getWorld("world").setStorm(false);
+        Bukkit.getServer().getWorld("world").setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
+        Bukkit.getServer().getWorld("world").setGameRule(GameRule.DO_WEATHER_CYCLE, false);
+        Bukkit.getServer().getWorld("world").setGameRule(GameRule.DO_MOB_SPAWNING, false);
     }
 }

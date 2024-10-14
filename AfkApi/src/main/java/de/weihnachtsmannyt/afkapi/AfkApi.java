@@ -61,4 +61,8 @@ public final class AfkApi extends JavaPlugin {
     public String getPrefix() {
         return prefix;
     }
+
+    public AfkManager getAfkManager() {
+        return afkManager;
+    }
 }
