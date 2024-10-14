@@ -15,7 +15,6 @@ public class MovementChecker implements Runnable {
 
         //System.out.println("AFK Status for each player is being checked");
         afkManager.checkAllPlayersAFKStatus();
-
     }
 
 }

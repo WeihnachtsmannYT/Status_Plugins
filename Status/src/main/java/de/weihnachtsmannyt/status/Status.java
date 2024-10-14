@@ -27,6 +27,8 @@ public final class Status extends JavaPlugin {
 
     private final Boolean debug = true;
 
+    //TODO: "your condition"? "step if true":"step if condition fails"
+
     @Override
     public void onEnable() {
         // Plugin startup logic

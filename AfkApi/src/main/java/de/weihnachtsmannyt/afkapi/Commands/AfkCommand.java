@@ -52,12 +52,12 @@ public class AfkCommand implements CommandExecutor {
             }
         } else {
             if (afkManager.toggleAFKStatus(p)) {
-                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7You are now AFK.");
+                p.sendMessage(AfkApi.getInstance().getPrefix() + " §7You are now AFK.");
                 AfkManager.setPlayerAfk(p, true, true);
                 afkManager.announceToOthers(p, true);
 
             } else {
-                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7You are no longer AFK.");
+                p.sendMessage(AfkApi.getInstance().getPrefix() + " §7You are no longer AFK.");
                 AfkManager.setPlayerAfk(p, false, true);
                 afkManager.announceToOthers(p, false);
                 Status.getInstance().getPrefixManager().updatePrefixAllPlayers();

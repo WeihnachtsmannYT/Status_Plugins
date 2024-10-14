@@ -2,7 +2,6 @@ package de.weihnachtsmannyt.afkapi.Commands;
 
 import de.weihnachtsmannyt.afkapi.AfkApi;
 import de.weihnachtsmannyt.afkapi.Managers.AfkManager;
-import de.weihnachtsmannyt.status.Status;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -27,20 +26,20 @@ public class IsAfkCommand implements CommandExecutor {
         if (args.length == 0) {
 
             if (afkManager.isAFK(p)) {
-                p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7You are currently AFK.");
-                p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7 since:" + AfkApi.getInstance().getAfkManager().getlastMovementTime(p));
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 You are currently AFK.");
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since:" + AfkApi.getInstance().getAfkManager().getLastMovementTimeString(p));
             } else {
-                p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7You are not currently AFK.");
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 You are not currently AFK.");
             }
 
         } else {
             Player target = Bukkit.getPlayerExact(args[0]);
 
             if (afkManager.isAFK(target)) {
-                p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7" + target.getDisplayName() + " is currently AFK.");
-                p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7 since:" + AfkApi.getInstance().getAfkManager().getlastMovementTime(target));
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 " + target.getDisplayName() + " is currently AFK.");
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 since:" + AfkApi.getInstance().getAfkManager().getLastMovementTimeString(target));
             } else {
-                p.sendMessage(Status.getInstance().getConfigVarManager().getStatus_Prefix() + "§7" + target.getDisplayName() + " is not currently AFK.");
+                p.sendMessage(AfkApi.getInstance().getPrefix() + "§7 " + target.getDisplayName() + " is not currently AFK.");
             }
 
         }
